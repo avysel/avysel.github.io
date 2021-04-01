@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: avysel.github.io
+Token: f5e834550124fbecd4e021f769cebcc40769dd2709ad413b019d789c5ff414ad
