@@ -1,0 +1,26 @@
+/* En mode impression, le contenu prend toute la largeur */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100% !important; /* Prend toute la largeur */
+        max-width: 100% !important;
+        padding: 0 !important; /* Supprime les marges internes */
+    }
+
+    .row {
+        margin: 0 !important; /* Supprime les marges entre les lignes */
+    }
+
+    .col-md-8, .col-md-4 {
+        flex: 0 0 100% !important; /* Chaque colonne prend toute la largeur */
+        max-width: 100% !important;
+    }
+
+    .card {
+        margin-bottom: 10px; /* Réduit l'espacement entre les cartes */
+    }
+}
