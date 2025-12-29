@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Vanryssel - CV (1 page)</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Colors */
+            --color-text: #1a1a1a;
+            --color-text-muted: #333;
+            --color-text-light: #ffffff;
+            --color-text-light-muted: rgba(255, 255, 255, 0.9);
+            --color-accent: #2563eb;
+            --color-bg: #ffffff;
+            --color-bg-dark: #1e293b;
+            --color-bg-dark-accent: #334155;
+            
+            /* Typography */
+            --font-family: 'Inter', 'Roboto', 'Lato', Arial, sans-serif;
+            --font-size-body: 9.5pt;
+            --font-size-heading: 11pt;
+            --font-size-name: 16pt;
+            --line-height: 1.4;
+            
+            /* Spacing - Tighter for 1 page */
+            --spacing-section: 1em;
+            --spacing-item: 0.5em;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-body);
+            line-height: var(--line-height);
+            color: var(--color-text);
+            background: var(--color-bg);
+        }
+        
+        .resume-wrapper {
+            display: flex;
+            min-height: 297mm;
+        }
+        
+        /* Left sidebar - 1/3 width, dark background */
+        .sidebar {
+            width: 33.333%;
+            background: var(--color-bg-dark);
+            color: var(--color-text-light);
+            padding: 2em 1.5em;
+        }
+        
+        /* Right main content - 2/3 width, white background */
+        .main-content {
+            width: 66.666%;
+            background: var(--color-bg);
+            padding: 2em 2em;
+        }
+        
+        /* Header in sidebar */
+        header {
+            margin-bottom: var(--spacing-section);
+        }
+        
+        h1 {
+            font-size: var(--font-size-name);
+            font-weight: 700;
+            color: var(--color-text-light);
+            margin-bottom: 0.5em;
+        }
+        
+        .header-title {
+            font-size: 11pt;
+            font-weight: 500;
+            color: var(--color-text-light-muted);
+            margin-bottom: 1em;
+        }
+        
+        .contact-info {
+            font-size: 9pt;
+            color: var(--color-text-light-muted);
+        }
+        
+        .contact-info div {
+            margin-bottom: 0.5em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        
+        .contact-info svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--color-text-light-muted);
+            flex-shrink: 0;
+        }
+        
+        .contact-info a {
+            color: var(--color-text-light-muted);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            color: var(--color-text-light);
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: var(--spacing-section);
+        }
+        
+        h2 {
+            font-size: var(--font-size-heading);
+            font-weight: 600;
+            margin-bottom: 0.5em;
+        }
+        
+        /* Sidebar sections */
+        .sidebar h2 {
+            color: var(--color-text-light);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 0.5em;
+        }
+        
+        /* Main content sections */
+        .main-content h2 {
+            color: var(--color-accent);
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.4em;
+        }
+        
+        /* Profile section */
+        .profile-section {
+            margin-bottom: var(--spacing-section);
+        }
+        
+        .profile-text {
+            font-size: 9.5pt;
+            color: var(--color-text);
+            margin-bottom: 0.5em;
+            line-height: 1.4;
+        }
+        
+        .profile-text:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Articles */
+        article {
+            margin-bottom: 1.2em;
+            margin-top: 0.8em;
+            padding-top: 0.8em;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        article:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0.6em;
+        }
+        
+        article:last-child {
+            margin-bottom: 0;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3em;
+        }
+        
+        .experience-title {
+            font-weight: 600;
+            color: var(--color-text);
+            font-size: 10pt;
+        }
+        
+        .experience-company {
+            font-weight: 500;
+            color: var(--color-text-muted);
+            font-size: 9.5pt;
+        }
+        
+        .experience-dates {
+            font-size: 8.5pt;
+            color: var(--color-text-muted);
+            white-space: nowrap;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            position: relative;
+            padding-left: 0.8em;
+            margin-bottom: 0.15em;
+            font-size: 9.5pt;
+        }
+        
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-text);
+        }
+        
+        /* Skills in sidebar */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .skills-list > li {
+            margin-bottom: 1em;
+        }
+        
+        .skills-list > li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .skills-list > li strong {
+            font-weight: 600;
+            color: var(--color-text-light);
+            font-size: 10pt;
+            display: block;
+            margin-bottom: 0.4em;
+        }
+        
+        .skills-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 0.3em;
+            margin-bottom: 0;
+        }
+        
+        .skills-list ul li {
+            font-size: 9pt;
+            color: var(--color-text-light-muted);
+            line-height: 1.5;
+            margin-bottom: 0.2em;
+        }
+        
+        .skills-list ul li:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Education in sidebar */
+        .education-item {
+            margin-bottom: 1em;
+        }
+        
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .education-item-title {
+            font-weight: 600;
+            color: var(--color-text-light);
+            font-size: 10pt;
+            margin-bottom: 0.25em;
+        }
+        
+        .education-item-school {
+            color: var(--color-text-light-muted);
+            font-size: 9pt;
+            margin-bottom: 0.15em;
+        }
+        
+        .education-item-dates {
+            color: var(--color-text-light-muted);
+            font-size: 8.5pt;
+        }
+        
+        /* Languages in sidebar */
+        .language-item {
+            margin-bottom: 0.75em;
+        }
+        
+        .language-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: var(--color-text-light);
+            font-size: 10pt;
+        }
+        
+        .language-level {
+            color: var(--color-text-light-muted);
+            font-size: 9pt;
+        }
+        
+        /* Links */
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Technologies paragraph */
+        .technologies {
+            font-size: 8.5pt;
+            color: var(--color-text-muted);
+            font-style: italic;
+            margin-top: 0.4em;
+        }
+        
+        /* Print styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-size: 9.5pt;
+                background: white;
+            }
+            
+            .resume-wrapper {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                width: 100%;
+            }
+            
+            .sidebar {
+                flex: 0 0 33.333% !important;
+                width: 33.333% !important;
+                max-width: 33.333% !important;
+                min-width: 33.333% !important;
+                float: none !important;
+                background: var(--color-bg-dark);
+                color: var(--color-text-light);
+                padding: 1.5em 1em;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .main-content {
+                flex: 0 0 66.666% !important;
+                width: 66.666% !important;
+                max-width: 66.666% !important;
+                min-width: 66.666% !important;
+                float: none !important;
+                background: var(--color-bg);
+                padding: 1.5em 1.5em;
+                padding-top: 2.5em;
+            }
+            
+            /* Add extra top padding for content that starts on a new page */
+            .main-content section {
+                padding-top: 0.5em;
+            }
+            
+            .main-content section:first-child {
+                padding-top: 0;
+            }
+            
+            .no-print {
+                display: none !important;
+            }
+            
+            /* Show URLs in print */
+            a[href]:after {
+                content: " (" attr(href) ")";
+                font-size: 7.5pt;
+                color: var(--color-text-muted);
+                font-weight: normal;
+            }
+            
+            /* Allow sections to break across pages, but avoid breaking articles */
+            .main-content section {
+                page-break-inside: auto;
+                page-break-after: auto;
+            }
+            
+            .sidebar section {
+                page-break-inside: avoid;
+            }
+            
+            article {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+            
+            /* Optimize spacing for print */
+            section {
+                margin-bottom: 0.75em;
+            }
+            
+            header {
+                margin-bottom: 0.75em;
+            }
+            
+            ul li {
+                margin-bottom: 0.1em;
+            }
+        }
+        
+        /* Web version */
+        @media screen {
+            body {
+                background: #f9fafb;
+                padding: 2em;
+            }
+            
+            .resume-wrapper {
+                max-width: 210mm;
+                margin: 0 auto;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+        /* Mobile - stack columns */
+        @media (max-width: 768px) {
+            .resume-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar,
+            .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-wrapper">
+        <!-- Left Sidebar - 1/3 width, dark background -->
+        <aside class="sidebar">
+            <header>
+                <h1>Alexandre Vanryssel</h1>
+                <div class="header-title">Tech Lead Freelance | Java, Blockchain, IA</div>
+                <div class="contact-info">
+                    <div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Lille, France</span>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <a href="https://linkedin.com/in/alexandre-vanryssel" target="_blank">linkedin.com/in/alexandre-vanryssel</a>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <a href="https://github.com/avysel" target="_blank">github.com/avysel</a>
+                    </div>
+                </div>
+            </header>
+            
+            <section>
+                <h2>Compétences</h2>
+                <ul class="skills-list">
+                    <li>
+                        <strong>Langages de programmation :</strong>
+                        <ul>
+                            <li>Java, Javascript, Typescript, HTML, CSS, Python, Solidity, Ligo, PHP</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Frameworks et outils :</strong>
+                        <ul>
+                            <li>Spring Boot, Spring, React, Angular, Vue.js</li>
+                            <li>Kafka, Redis</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Base de données :</strong>
+                        <ul>
+                            <li>MongoDB, PostgreSQL, Neo4J, Oracle</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>DevOps et Cloud :</strong>
+                        <ul>
+                            <li>Docker, Kubernetes, GCP, Azure, Gitlab et Gitlab CI, Github et Github Actions</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Blockchain :</strong>
+                        <ul>
+                            <li><strong>Ethereum :</strong> Solidity, Truffle, Remix, Web3.js</li>
+                            <li><strong>Tezos :</strong> Ligo, Taquito</li>
+                            <li><strong>Concepts :</strong> Smart contracts, consensus, gouvernance, DAG</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>IA :</strong>
+                        <ul>
+                            <li>Python, Jupyter, Ollama, OpenWebUI</li>
+                            <li>Knowledge Graph, Vectorisation et embeddings</li>
+                            <li>Atlas Vector Search, PGVector, Neo4J</li>
+                            <li>Prompt engineering, MCP</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Outils de test et monitoring :</strong>
+                        <ul>
+                            <li>Postman, Bruno, Gatling, Datadog</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Autres compétences :</strong>
+                        <ul>
+                            <li>Scrum (<a href="https://www.scrum.org/user/594885" target="_blank">certifié PSM1</a>)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Formation</h2>
+                <div class="education-item">
+                    <div class="education-item-title">Ingénieur en Informatique et Statistique</div>
+                    <div class="education-item-school">Polytech'Lille</div>
+                    <div class="education-item-dates">2005-2008</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-item-title">DUT Informatique</div>
+                    <div class="education-item-school">IUT de Lens</div>
+                    <div class="education-item-dates">2003-2005</div>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Langues</h2>
+                <div class="language-item">
+                    <div class="language-name">Français</div>
+                    <div class="language-level">Langue maternelle</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Anglais</div>
+                    <div class="language-level">Courant</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Chinois (Mandarin)</div>
+                    <div class="language-level">Notions</div>
+                </div>
+            </section>
+        </aside>
+        
+        <!-- Right Main Content - 2/3 width, white background -->
+        <main class="main-content">
+            <section class="profile-section">
+                <h2>Profil</h2>
+                <p class="profile-text">
+                    Tech Lead expérimenté avec 15+ ans dans le développement logiciel, spécialisé en Java, Spring Boot, 
+                    blockchain (Ethereum, Tezos) et IA. Pilotage d'équipes pluridisciplinaires, conception d'architectures 
+                    scalables, mise en œuvre de solutions DevOps/Cloud (Docker, Kubernetes, GCP, Azure).
+                </p>
+            </section>
+            
+            <section>
+                <h2>Expériences</h2>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Tech Lead</div>
+                            <div class="experience-company">Astek (jusque fév 2025), puis Freelance, pour Adeo</div>
+                        </div>
+                        <div class="experience-dates">Jan 2023 - Présent</div>
+                    </div>
+                    <ul>
+                        <li>Tech lead dans une équipe de 10 personnes sur produits costing. Architecture, conception technique, 
+                        politiques transverses (qualité, sécurité, observabilité), recrutement.</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Tech :</strong> Java, Spring Boot, MongoDB, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Engineering Manager</div>
+                            <div class="experience-company">Marigold</div>
+                        </div>
+                        <div class="experience-dates">Oct 2022 - Déc 2022</div>
+                    </div>
+                    <ul>
+                        <li>Manager de l'équipe développant Ligo (langage de smart contract Tezos). Équipe de 12 personnes réparties dans le monde.</li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Cellule Innovation / Référent blockchain / IA</div>
+                            <div class="experience-company">Ineat Lab / Innovation Lab (Astek)</div>
+                        </div>
+                        <div class="experience-dates">2018 - 2025</div>
+                    </div>
+                    <ul>
+                        <li>Veille technologique blockchain et IA. POCs, études de cas, formation interne, articles, conférences. 
+                        Études RAG/GraphRAG, knowledge graphs, évaluation de modèles (Gemini, GPT, Llama, Claude).</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Tech :</strong> Blockchain : React, JS/TS, Ethereum (Solidity), Tezos (Ligo). 
+                        IA : Python, Jupyter, Ollama, Neo4J, Vector Search
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Tech Lead</div>
+                            <div class="experience-company">Ineat Group pour Norauto</div>
+                        </div>
+                        <div class="experience-dates">Juil 2021 - Juil 2022</div>
+                    </div>
+                    <ul>
+                        <li>Tech lead équipe Concept Store. Mise en place de POCs et leur industrialisation pour nouveaux concepts magasin.</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Tech :</strong> Java, Spring Boot, MongoDB, PostgreSQL, Azure
+                    </p>
+                </article>
+            </section>
+            
+            <section>
+                <h2>Projets personnels</h2>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Faucet Tezos / Tezocracy</div>
+                            <div class="experience-company"></div>
+                        </div>
+                        <div class="experience-dates">2022-2023</div>
+                    </div>
+                    <ul>
+                        <li>Faucet pour testnet Tezos (financé par la fondation Tezos, devenu officiel). 
+                        <a href="https://tezocracy.xyz/">Tezocracy</a> (2023) : outil pour votes de gouvernance Tezos.</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Tech :</strong> React, Taquito, Tezos
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
