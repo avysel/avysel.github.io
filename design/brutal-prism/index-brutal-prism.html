@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutal Prism Design System - Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        :root {
+            /* Primary Colors - Tech Inspired */
+            --color-primary: #6366F1;
+            --color-primary-dark: #4F46E5;
+            --color-primary-light: #818CF8;
+            
+            --color-secondary: #8B5CF6;
+            --color-accent: #06B6D4;
+            --color-success: #10B981;
+            --color-warning: #F59E0B;
+            --color-error: #EF4444;
+            --color-info: #3B82F6;
+            
+            /* Neutral Colors - Dark Tech Backgrounds */
+            --color-bg-primary: #0F172A;
+            --color-bg-secondary: #1E293B;
+            --color-bg-tertiary: #334155;
+            --color-bg-light: #F8FAFC;
+            
+            --color-text-primary: #F1F5F9;
+            --color-text-secondary: #CBD5E1;
+            --color-text-muted: #94A3B8;
+            --color-text-inverse: #0F172A;
+            
+            --color-border: #334155;
+            --color-border-dark: #000000;
+            --color-border-glow: rgba(99, 102, 241, 0.5);
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, monospace;
+            
+            --font-size-h1: 3.5rem;
+            --font-size-h2: 2.75rem;
+            --font-size-h3: 2.25rem;
+            --font-size-h4: 1.75rem;
+            --font-size-h5: 1.5rem;
+            --font-size-h6: 1.25rem;
+            --font-size-base: 1.125rem;
+            --font-size-sm: 1rem;
+            --font-size-xs: 0.875rem;
+            --font-size-lg: 1.25rem;
+            --font-size-xl: 1.5rem;
+            
+            --font-weight-light: 300;
+            --font-weight-normal: 400;
+            --font-weight-medium: 600;
+            --font-weight-semibold: 700;
+            --font-weight-bold: 800;
+            
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.8;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2.5rem;
+            --spacing-xl: 4rem;
+            --spacing-2xl: 6rem;
+            --spacing-3xl: 8rem;
+            --spacing-4xl: 12rem;
+            
+            /* Thick borders - Brutalist style */
+            --border-width: 3px;
+            --border-width-thick: 5px;
+            --border-width-extra: 8px;
+            
+            /* No border-radius - Geometric shapes */
+            --border-radius: 0;
+            
+            /* Brutal shadows - Black offset */
+            --shadow-brutal-sm: 4px 4px 0 0 var(--color-border-dark);
+            --shadow-brutal: 8px 8px 0 0 var(--color-border-dark);
+            --shadow-brutal-lg: 12px 12px 0 0 var(--color-border-dark);
+            
+            /* Transitions */
+            --transition-fast: 100ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Container */
+            --container-max-width: 1400px;
+            --container-padding: var(--spacing-xl);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text-primary);
+            background: var(--color-bg-primary);
+            font-weight: var(--font-weight-normal);
+        }
+        
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+        }
+        
+        .header {
+            background: var(--color-primary);
+            color: var(--color-text-inverse);
+            padding: var(--spacing-xl) var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+            border-bottom: var(--border-width-extra) solid var(--color-border-dark);
+            box-shadow: var(--shadow-brutal);
+        }
+        
+        .header h1 {
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: -0.03em;
+        }
+        
+        .header p {
+            color: var(--color-text-inverse);
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-medium);
+            opacity: 0.95;
+        }
+        
+        .section {
+            background: var(--color-bg-secondary);
+            border: var(--border-width-thick) solid var(--color-border-dark);
+            padding: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+            box-shadow: var(--shadow-brutal);
+            position: relative;
+        }
+        
+        .section:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: var(--shadow-brutal-lg);
+        }
+        
+        :root {
+            --bs-primary: var(--color-primary);
+            --bs-secondary: var(--color-secondary);
+            --bs-success: var(--color-success);
+            --bs-warning: var(--color-warning);
+            --bs-danger: var(--color-error);
+            --bs-border-radius: 0;
+            --bs-border-radius-sm: 0;
+            --bs-border-radius-lg: 0;
+            --bs-body-font-family: var(--font-primary);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: var(--font-weight-bold);
+            letter-spacing: -0.03em;
+            line-height: var(--line-height-tight);
+            color: var(--color-text-primary);
+        }
+        
+        h1 { font-size: var(--font-size-h1); }
+        h2 { font-size: var(--font-size-h2); }
+        h3 { font-size: var(--font-size-h3); }
+        h4 { font-size: var(--font-size-h4); }
+        h5 { font-size: var(--font-size-h5); }
+        h6 { font-size: var(--font-size-h6); }
+        
+        .btn {
+            font-weight: var(--font-weight-bold);
+            letter-spacing: 0.05em;
+            border: var(--border-width-thick) solid var(--color-border-dark) !important;
+            padding: var(--spacing-sm) var(--spacing-lg) !important;
+            transition: all var(--transition-fast);
+            position: relative;
+            box-shadow: var(--shadow-brutal-sm) !important;
+        }
+        
+        .btn:hover {
+            transform: translate(4px, 4px);
+            box-shadow: none !important;
+        }
+        
+        .btn:active {
+            transform: translate(0, 0);
+            box-shadow: var(--shadow-brutal-sm) !important;
+        }
+        
+        .btn-primary {
+            background: var(--color-primary) !important;
+            color: var(--color-text-inverse) !important;
+            border-color: var(--color-border-dark) !important;
+        }
+        
+        .btn-primary:hover {
+            background: var(--color-primary-dark) !important;
+        }
+        
+        .btn-secondary {
+            background: var(--color-secondary) !important;
+            color: var(--color-text-inverse) !important;
+            border-color: var(--color-border-dark) !important;
+        }
+        
+        .btn-accent {
+            background: var(--color-accent) !important;
+            color: var(--color-text-inverse) !important;
+            border-color: var(--color-border-dark) !important;
+        }
+        
+        .btn-success {
+            background: var(--color-success) !important;
+            color: var(--color-text-inverse) !important;
+            border-color: var(--color-border-dark) !important;
+        }
+        
+        .btn-danger {
+            background: var(--color-error) !important;
+            color: var(--color-text-inverse) !important;
+            border-color: var(--color-border-dark) !important;
+        }
+        
+        .btn-outline-primary {
+            background: transparent !important;
+            color: var(--color-primary) !important;
+            border-color: var(--color-primary) !important;
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--color-primary) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .card {
+            border: var(--border-width-thick) solid var(--color-border-dark) !important;
+            background: var(--color-bg-secondary) !important;
+            box-shadow: var(--shadow-brutal) !important;
+            transition: all var(--transition-fast);
+            padding: 0 !important;
+        }
+        
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: var(--shadow-brutal-lg) !important;
+        }
+        
+        .card-header {
+            background: var(--color-accent) !important;
+            border-bottom: var(--border-width-thick) solid var(--color-border-dark) !important;
+            font-weight: var(--font-weight-bold);
+            padding: var(--spacing-md) var(--spacing-lg) !important;
+            color: var(--color-text-primary) !important;
+        }
+        
+        .card-body {
+            padding: var(--spacing-lg) !important;
+            background: var(--color-bg-secondary) !important;
+        }
+        
+        .card-title {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-text-primary) !important;
+            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-h5);
+        }
+        
+        .badge {
+            padding: var(--spacing-xs) var(--spacing-sm) !important;
+            font-weight: var(--font-weight-bold);
+            border: var(--border-width) solid var(--color-border-dark) !important;
+            box-shadow: var(--shadow-brutal-sm) !important;
+        }
+        
+        .badge-primary {
+            background: var(--color-primary) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .badge-secondary {
+            background: var(--color-secondary) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .badge-accent {
+            background: var(--color-accent) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .alert {
+            border: var(--border-width-thick) solid var(--color-border-dark) !important;
+            padding: var(--spacing-md) var(--spacing-lg) !important;
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-brutal-sm) !important;
+        }
+        
+        .alert-primary {
+            background: var(--color-primary) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .alert-secondary {
+            background: var(--color-secondary) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .alert-accent {
+            background: var(--color-accent) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .alert-success {
+            background: var(--color-success) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .alert-danger {
+            background: var(--color-error) !important;
+            color: var(--color-text-inverse) !important;
+        }
+        
+        .section-title {
+            font-size: var(--font-size-h2);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-xl);
+            color: var(--color-text-primary);
+            border-bottom: var(--border-width-thick) solid var(--color-primary);
+            padding-bottom: var(--spacing-md);
+        }
+        
+        .section-subtitle {
+            font-size: var(--font-size-h4);
+            font-weight: var(--font-weight-semibold);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-primary);
+        }
+        
+        .link {
+            color: var(--color-primary);
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            transition: all var(--transition-base);
+        }
+        
+        .link:hover {
+            color: var(--color-accent);
+            text-decoration-thickness: 3px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .color-swatch {
+            border: var(--border-width-thick) solid var(--color-border-dark);
+            box-shadow: var(--shadow-brutal-sm);
+            overflow: hidden;
+        }
+        
+        .color-swatch-preview {
+            height: 100px;
+            width: 100%;
+        }
+        
+        .color-swatch-info {
+            padding: var(--spacing-md);
+            background-color: var(--color-bg-secondary);
+            border-top: var(--border-width-thick) solid var(--color-border-dark);
+        }
+        
+        .color-swatch-name {
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-text-primary);
+        }
+        
+        .color-swatch-value {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+        
+        .spacing-demo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .spacing-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .spacing-box {
+            background-color: var(--color-primary);
+            border: var(--border-width) solid var(--color-border-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .spacing-xs { width: var(--spacing-xs); height: var(--spacing-xs); }
+        .spacing-sm { width: var(--spacing-sm); height: var(--spacing-sm); }
+        .spacing-md { width: var(--spacing-md); height: var(--spacing-md); }
+        .spacing-lg { width: var(--spacing-lg); height: var(--spacing-lg); }
+        .spacing-xl { width: var(--spacing-xl); height: var(--spacing-xl); }
+        .spacing-2xl { width: var(--spacing-2xl); height: var(--spacing-2xl); }
+        
+        .shadow-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .shadow-item {
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg-secondary);
+            border: var(--border-width-thick) solid var(--color-border-dark);
+            text-align: center;
+        }
+        
+        .shadow-brutal-sm { box-shadow: var(--shadow-brutal-sm); }
+        .shadow-brutal { box-shadow: var(--shadow-brutal); }
+        .shadow-brutal-lg { box-shadow: var(--shadow-brutal-lg); }
+        
+        .code {
+            font-family: var(--font-mono);
+            background-color: var(--color-bg-tertiary);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-primary);
+            border: var(--border-width) solid var(--color-border-dark);
+        }
+        
+        .code-block {
+            font-family: var(--font-mono);
+            background-color: var(--color-bg-tertiary);
+            color: var(--color-text-primary);
+            padding: var(--spacing-lg);
+            border: var(--border-width-thick) solid var(--color-border-dark);
+            overflow-x: auto;
+            margin: var(--spacing-md) 0;
+            box-shadow: var(--shadow-brutal-sm);
+        }
+        
+        .nav {
+            background-color: var(--color-bg-secondary);
+            border-bottom: var(--border-width-thick) solid var(--color-border-dark);
+            padding: var(--spacing-md) var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+            box-shadow: var(--shadow-brutal-sm);
+        }
+        
+        .nav-link {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: var(--border-width) solid transparent;
+            transition: all var(--transition-base);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .nav-link:hover {
+            background-color: var(--color-primary);
+            color: var(--color-text-inverse);
+            border-color: var(--color-border-dark);
+        }
+        
+        .form-control {
+            border: var(--border-width-thick) solid var(--color-border-dark) !important;
+            background: var(--color-bg-secondary) !important;
+            color: var(--color-text-primary) !important;
+            padding: var(--spacing-sm) var(--spacing-md) !important;
+            box-shadow: var(--shadow-brutal-sm) !important;
+        }
+        
+        .form-control:focus {
+            border-color: var(--color-primary) !important;
+            box-shadow: var(--shadow-brutal-sm) !important;
+            outline: none;
+            transform: translate(-2px, -2px);
+            background: var(--color-bg-secondary) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing-md);
+            }
+            
+            .section {
+                padding: var(--spacing-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>BRUTAL PRISM</h1>
+            <p>Where tech colors meet brutalist geometry</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Colors Section -->
+        <section class="section">
+            <h2 class="section-title">Color Palette</h2>
+            <p class="text-secondary">Tech-inspired colors on dark backgrounds</p>
+            
+            <h3 class="section-subtitle">Primary Colors</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-primary);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">Primary (Indigo)</div>
+                        <div class="color-swatch-value">#6366F1</div>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-secondary);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">Secondary (Purple)</div>
+                        <div class="color-swatch-value">#8B5CF6</div>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-accent);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">Accent (Cyan)</div>
+                        <div class="color-swatch-value">#06B6D4</div>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-success);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">Success (Emerald)</div>
+                        <div class="color-swatch-value">#10B981</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-subtitle">Backgrounds</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-bg-primary);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">BG Primary</div>
+                        <div class="color-swatch-value">#0F172A</div>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-bg-secondary);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">BG Secondary</div>
+                        <div class="color-swatch-value">#1E293B</div>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-swatch-preview" style="background: var(--color-bg-tertiary);"></div>
+                    <div class="color-swatch-info">
+                        <div class="color-swatch-name">BG Tertiary</div>
+                        <div class="color-swatch-value">#334155</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Typography Section -->
+        <section class="section">
+            <h2 class="section-title">Typography</h2>
+            <div class="typography-demo">
+                <h1>Heading 1 - Bold & Impactful</h1>
+                <h2>Heading 2 - Section Titles</h2>
+                <h3>Heading 3 - Subsections</h3>
+                <h4>Heading 4 - Card Titles</h4>
+                <h5>Heading 5 - Small Headings</h5>
+                <h6>Heading 6 - Labels</h6>
+                <p>Body text - Regular paragraph with optimal line height for readability. The font is Inter, a modern sans-serif designed for screens.</p>
+                <p class="text-sm">Small text - For metadata and secondary information</p>
+                <p class="text-xs">Extra small text - For fine print</p>
+                <p class="text-lg">Large text - For emphasis</p>
+                <p class="text-xl">Extra large text - For highlights</p>
+            </div>
+        </section>
+        
+        <!-- Buttons Section -->
+        <section class="section">
+            <h2 class="section-title">Buttons</h2>
+            <p class="text-secondary mb-4">Brutalist buttons with tech colors and offset shadows</p>
+            
+            <div class="d-flex flex-wrap gap-3 mb-4">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-accent">Accent</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-outline-primary">Outline</button>
+            </div>
+            
+            <div class="d-flex flex-wrap gap-3">
+                <button class="btn btn-primary" disabled>Disabled</button>
+                <button class="btn btn-secondary" disabled>Disabled</button>
+            </div>
+        </section>
+        
+        <!-- Cards Section -->
+        <section class="section">
+            <h2 class="section-title">Cards</h2>
+            <p class="text-secondary mb-4">Geometric cards with thick borders and offset shadows</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Card Title</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a brutalist card with tech colors. It features thick borders and offset shadows.</p>
+                            <button class="btn btn-primary btn-sm">Action</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Card</h5>
+                            <p class="card-text">A card without header, showcasing the brutalist aesthetic with dark tech backgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Badges Section -->
+        <section class="section">
+            <h2 class="section-title">Badges</h2>
+            <p class="text-secondary mb-4">Rectangular badges with thick borders</p>
+            
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-accent">Accent</span>
+                <span class="badge badge-primary">Tech</span>
+                <span class="badge badge-secondary">Design</span>
+            </div>
+        </section>
+        
+        <!-- Alerts Section -->
+        <section class="section">
+            <h2 class="section-title">Alerts</h2>
+            <p class="text-secondary mb-4">Bold alerts with tech colors</p>
+            
+            <div class="alert alert-primary" role="alert">
+                <strong>Primary Alert:</strong> This is a primary alert with indigo background.
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                <strong>Secondary Alert:</strong> This is a secondary alert with purple background.
+            </div>
+            <div class="alert alert-accent" role="alert">
+                <strong>Accent Alert:</strong> This is an accent alert with cyan background.
+            </div>
+            <div class="alert alert-success" role="alert">
+                <strong>Success Alert:</strong> Operation completed successfully.
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <strong>Danger Alert:</strong> An error has occurred.
+            </div>
+        </section>
+        
+        <!-- Forms Section -->
+        <section class="section">
+            <h2 class="section-title">Forms</h2>
+            <p class="text-secondary mb-4">Brutalist form inputs with tech styling</p>
+            
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="input1" class="form-label">Text Input</label>
+                    <input type="text" class="form-control" id="input1" placeholder="Enter text">
+                </div>
+                <div class="col-md-6">
+                    <label for="input2" class="form-label">Email Input</label>
+                    <input type="email" class="form-control" id="input2" placeholder="email@example.com">
+                </div>
+                <div class="col-12">
+                    <label for="textarea" class="form-label">Textarea</label>
+                    <textarea class="form-control" id="textarea" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Shadows Section -->
+        <section class="section">
+            <h2 class="section-title">Shadows</h2>
+            <p class="text-secondary mb-4">Brutalist offset shadows</p>
+            
+            <div class="shadow-demo">
+                <div class="shadow-item shadow-brutal-sm">
+                    <strong>Small Shadow</strong>
+                    <p class="mb-0 mt-2">4px offset</p>
+                </div>
+                <div class="shadow-item shadow-brutal">
+                    <strong>Standard Shadow</strong>
+                    <p class="mb-0 mt-2">8px offset</p>
+                </div>
+                <div class="shadow-item shadow-brutal-lg">
+                    <strong>Large Shadow</strong>
+                    <p class="mb-0 mt-2">12px offset</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Spacing Section -->
+        <section class="section">
+            <h2 class="section-title">Spacing</h2>
+            <p class="text-secondary mb-4">Generous spacing system</p>
+            
+            <div class="spacing-demo">
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-xs"></div>
+                    <small>xs (8px)</small>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-sm"></div>
+                    <small>sm (16px)</small>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-md"></div>
+                    <small>md (24px)</small>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-lg"></div>
+                    <small>lg (40px)</small>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-xl"></div>
+                    <small>xl (64px)</small>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box spacing-2xl"></div>
+                    <small>2xl (96px)</small>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Code Section -->
+        <section class="section">
+            <h2 class="section-title">Code</h2>
+            <p class="text-secondary mb-4">Monospace code blocks with brutalist styling</p>
+            
+            <p>Inline code: <code class="code">const brutal = true;</code></p>
+            
+            <div class="code-block">
+<pre>function brutalPrism() {
+    const colors = {
+        primary: '#6366F1',
+        secondary: '#8B5CF6',
+        accent: '#06B6D4'
+    };
+    
+    return {
+        border: '5px solid black',
+        shadow: '8px 8px 0 0 black',
+        borderRadius: '0'
+    };
+}</pre>
+            </div>
+        </section>
+        
+        <!-- Links Section -->
+        <section class="section">
+            <h2 class="section-title">Links</h2>
+            <p class="text-secondary mb-4">Tech-colored links with thick underlines</p>
+            
+            <p>
+                This is a <a href="#" class="link">primary link</a> with tech styling.
+                Here's another <a href="#" class="link">link example</a> to demonstrate the hover effect.
+            </p>
+        </section>
+        
+        <!-- Navigation Section -->
+        <section class="section">
+            <h2 class="section-title">Navigation</h2>
+            <p class="text-secondary mb-4">Brutalist navigation bar</p>
+            
+            <nav class="nav">
+                <div class="d-flex gap-3">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Projects</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
