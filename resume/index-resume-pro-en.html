@@ -340,6 +340,53 @@
             margin-top: 0.5em;
         }
         
+        /* Teaching items - more compact format */
+        .teaching-item {
+            margin-bottom: 1em;
+            padding-top: 0.75em;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .teaching-item:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        
+        .teaching-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .teaching-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25em;
+        }
+        
+        .teaching-title {
+            font-weight: 600;
+            color: var(--color-text);
+            font-size: 10pt;
+        }
+        
+        .teaching-school {
+            font-weight: 500;
+            color: var(--color-text-muted);
+            font-size: 9.5pt;
+        }
+        
+        .teaching-dates {
+            font-size: 9pt;
+            color: var(--color-text-muted);
+            white-space: nowrap;
+        }
+        
+        .teaching-duration {
+            font-size: 9pt;
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+        
         /* Print styles */
         @media print {
             @page {
@@ -372,7 +419,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                padding: 1.5em 1em;
+                padding: 1.2em 0.8em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -409,14 +456,29 @@
                 font-weight: normal;
             }
             
+            /* URLs in sidebar should be white for visibility */
+            .sidebar a[href]:after {
+                color: var(--color-text-light) !important;
+            }
+            
             /* Allow sections to break across pages, but avoid breaking articles */
             .main-content section {
                 page-break-inside: auto;
                 page-break-after: auto;
             }
             
+            .sidebar header {
+                page-break-after: avoid;
+                margin-bottom: 0.8em;
+            }
+            
             .sidebar section {
                 page-break-inside: avoid;
+                page-break-before: avoid !important;
+            }
+            
+            .sidebar section:first-of-type {
+                page-break-before: avoid !important;
             }
             
             article {
@@ -424,12 +486,29 @@
                 page-break-after: auto;
             }
             
+            /* Reduce spacing in sidebar for print to fit more content */
+            .sidebar .skills-list {
+                margin-bottom: 0.5em;
+            }
+            
+            .sidebar .skills-list > li {
+                margin-bottom: 0.6em;
+            }
+            
             /* Optimize spacing for print */
-            section {
+            .sidebar section {
+                margin-bottom: 0.8em;
+            }
+            
+            .main-content section {
                 margin-bottom: 1em;
             }
             
-            header {
+            .sidebar header {
+                margin-bottom: 0.8em;
+            }
+            
+            .main-content header {
                 margin-bottom: 1em;
             }
         }
@@ -466,9 +545,9 @@
         <!-- Left Sidebar - 1/3 width, dark background -->
         <aside class="sidebar">
             <header>
-                <h1>Alexandre Vanryssel</h1>
+            <h1>Alexandre Vanryssel</h1>
                 <div class="header-title">Tech Lead Freelance | Java, Blockchain, AI</div>
-                <div class="contact-info">
+            <div class="contact-info">
                     <div>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -488,67 +567,67 @@
                         </svg>
                         <a href="https://github.com/avysel" target="_blank">github.com/avysel</a>
                     </div>
-                </div>
+            </div>
             </header>
             
             <section>
                 <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>
-                        <strong>Programming Languages:</strong>
-                        <ul>
-                            <li>Java, Javascript, Typescript, HTML, CSS, Python, Solidity, Ligo, PHP</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Frameworks & Tools:</strong>
-                        <ul>
-                            <li>Spring Boot, Spring, React, Angular, Vue.js</li>
-                            <li>Kafka, Redis</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Databases:</strong>
-                        <ul>
-                            <li>MongoDB, PostgreSQL, Neo4J, Oracle</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>DevOps & Cloud:</strong>
-                        <ul>
-                            <li>Docker, Kubernetes, GCP, Azure, Gitlab and Gitlab CI, Github and Github Actions</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Blockchain:</strong>
-                        <ul>
-                            <li><strong>Ethereum:</strong> Solidity, Truffle, Remix, Web3.js</li>
-                            <li><strong>Tezos:</strong> Ligo, Taquito</li>
-                            <li><strong>Concepts:</strong> Smart contracts, consensus, governance, DAG</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>AI:</strong>
-                        <ul>
-                            <li>Python, Jupyter, Ollama, OpenWebUI</li>
-                            <li>Knowledge Graph, Vectorization and embeddings</li>
-                            <li>Atlas Vector Search, PGVector, Neo4J</li>
-                            <li>Prompt engineering, MCP</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Testing & Monitoring Tools:</strong>
-                        <ul>
-                            <li>Postman, Bruno, Gatling, Datadog</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Other Skills:</strong>
-                        <ul>
-                            <li>Scrum (<a href="https://www.scrum.org/user/594885" target="_blank">PSM1 certified</a>)</li>
-                        </ul>
-                    </li>
-                </ul>
+                            <ul class="skills-list">
+                                <li>
+                                    <strong>Programming Languages:</strong>
+                                    <ul>
+                                        <li>Java, Javascript, Typescript, HTML, CSS, Python, Solidity, Ligo, PHP</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Frameworks & Tools:</strong>
+                                    <ul>
+                                        <li>Spring Boot, Spring, React, Angular, Vue.js</li>
+                                        <li>Kafka, Redis</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Databases:</strong>
+                                    <ul>
+                                        <li>MongoDB, PostgreSQL, Neo4J, Oracle</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>DevOps & Cloud:</strong>
+                                    <ul>
+                                        <li>Docker, Kubernetes, GCP, Azure, Gitlab and Gitlab CI, Github and Github Actions</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Blockchain:</strong>
+                                    <ul>
+                                        <li><strong>Ethereum:</strong> Solidity, Truffle, Remix, Web3.js</li>
+                                        <li><strong>Tezos:</strong> Ligo, Taquito</li>
+                                        <li><strong>Concepts:</strong> Smart contracts, consensus, governance, DAG</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>AI:</strong>
+                                    <ul>
+                                        <li>Python, Jupyter, Ollama, OpenWebUI</li>
+                                        <li>Knowledge Graph, Vectorization and embeddings</li>
+                                        <li>Atlas Vector Search, PGVector, Neo4J</li>
+                                        <li>Prompt engineering, MCP</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Testing & Monitoring Tools:</strong>
+                                    <ul>
+                                        <li>Postman, Bruno, Gatling, Datadog</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Other Skills:</strong>
+                                    <ul>
+                                        <li>Scrum (<a href="https://www.scrum.org/user/594885" target="_blank">PSM1 certified</a>)</li>
+                                    </ul>
+                                </li>
+                            </ul>
             </section>
             
             <section>
@@ -636,11 +715,11 @@
                             <div class="experience-company">Marigold</div>
                         </div>
                         <div class="experience-dates">Oct 2022 - Dec 2022</div>
-                    </div>
+                            </div>
                     <div class="experience-description">
                         Engineering manager at Marigold, in the Tezos blockchain ecosystem. Manager of the team 
                         responsible for developing Ligo, Tezos' smart contract language.
-                    </div>
+                            </div>
                     <ul>
                         <li>Management of a team of 12 people distributed worldwide</li>
                         <li>Language evolution</li>
@@ -686,13 +765,13 @@
                         <div>
                             <div class="experience-title">Tech Lead</div>
                             <div class="experience-company">Ineat Group for Norauto</div>
-                        </div>
+                            </div>
                         <div class="experience-dates">Jul 2021 - Jul 2022</div>
-                    </div>
+                            </div>
                     <div class="experience-description">
                         Tech lead in the Concept Store team. Implementation of proof of concepts and their 
                         industrialization for new store concepts.
-                    </div>
+                            </div>
                     <ul>
                         <li>Design and architecture</li>
                         <li>API development</li>
@@ -727,6 +806,121 @@
                         Kubernetes, GCP, Github, Github Actions.
                     </p>
                 </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Scrum Master</div>
+                            <div class="experience-company">Ineat Group for Adeo</div>
+                        </div>
+                        <div class="experience-dates">Oct 2018 - Apr 2019</div>
+                    </div>
+                    <div class="experience-description">
+                        Intervention in 4 teams to introduce them to the basics of agility and support them in their evolution with Scrum or Kanban.
+                    </div>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Java Project Designer & Scrum Master</div>
+                            <div class="experience-company">Ineat Group for Oney Bank</div>
+                        </div>
+                        <div class="experience-dates">Jan 2016 - Oct 2018</div>
+                    </div>
+                    <div class="experience-description">
+                        In the IT department's project division, on several projects: integration of a tokenization and mobile payment service, implementation of strong customer authentication, and exposure of business services as APIs.
+                    </div>
+                    <ul>
+                        <li>Implement Scrum and support the team</li>
+                        <li>Provide technical assistance on legal aspects</li>
+                        <li>Conduct preliminary studies</li>
+                        <li>Perform technical and functional designs</li>
+                        <li>Participate in architecture implementation</li>
+                        <li>Develop Proofs of Concept</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Technical Environment:</strong> Java, Spring Boot.
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Project Manager - Mobile Applications</div>
+                            <div class="experience-company">Ineat Group for Leroy Merlin</div>
+                        </div>
+                        <div class="experience-dates">Jan 2015 - Dec 2016</div>
+                    </div>
+                    <div class="experience-description">
+                        In the mobility division: coordination of development of a mobile sales application prototype. Then in the consumer mobile applications team: oversee the complete redesign of iOS and Android applications.
+                    </div>
+                    <ul>
+                        <li>Write technical designs</li>
+                        <li>Follow user workshops and implement ideas that emerged (Lean Startup)</li>
+                        <li>Coordinate exchanges between the team and feature teams</li>
+                        <li>Organize and monitor development</li>
+                        <li>Monitor budget</li>
+                        <li>Perform proximity management of the team (6 to 10 people)</li>
+                        <li>Manage technical and contractual relationships with certain solution providers</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Technical Environment:</strong> Android, iOS, Java.
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Project Manager & Java Developer</div>
+                            <div class="experience-company">Ineat Group for Humanis</div>
+                        </div>
+                        <div class="experience-dates">Jun 2012 - Dec 2014</div>
+                    </div>
+                    <div class="experience-description">
+                        Within the project division, on a group instance planning application.
+                    </div>
+                    <ul>
+                        <li>Manage a team of 2 people</li>
+                        <li>Perform project planning (Planisware tool)</li>
+                        <li>Monitor budget</li>
+                        <li>Coordinate different stakeholders</li>
+                        <li>Manage MOA relationships</li>
+                        <li>Perform designs and development (Java)</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Technical Environment:</strong> Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Tomcat.
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Java Study and Development Engineer</div>
+                            <div class="experience-company">Sopra Group</div>
+                        </div>
+                        <div class="experience-dates">2008 - 2012</div>
+                    </div>
+                    <p class="technologies">
+                        <strong>Technical Environment:</strong> Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat.
+                    </p>
+                </article>
+            </section>
+            
+            <section>
+                <h2>Teaching</h2>
+                
+                <div class="teaching-item">
+                    <div class="teaching-header">
+                        <div>
+                            <div class="teaching-title">Blockchain Training - Lab Supervision</div>
+                        </div>
+                    </div>
+                    <div style="font-size: 9pt; color: var(--color-text-muted); margin-top: 0.25em;">
+                        <div>Supinfo Lille - 2021</div>
+                        <div>Institut Mines-Télécom Lille - 2026</div>
+                    </div>
+                </div>
             </section>
             
             <section>
@@ -770,6 +964,28 @@
                     </ul>
                     <p class="technologies">
                         <strong>Technical Environment:</strong> React, Taquito, Tezos, Github Action, Netlify
+                    </p>
+                </article>
+                
+                <article>
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Solving Cain's Jawbone</div>
+                            <div class="experience-company"></div>
+                        </div>
+                        <div class="experience-dates">Since early 2025</div>
+                    </div>
+                    <div class="experience-description">
+                        Development of an AI-based tool to facilitate the resolution of <em>Cain's Jawbone</em>, a complex literary problem.
+                    </div>
+                    <ul>
+                        <li>Definition of entities and relationships in French and English texts of the work</li>
+                        <li>Writing prompts for data extraction and structuring</li>
+                        <li>Use of vector databases for storage and search</li>
+                        <li>Creation of a knowledge graph to improve the relevance of vector search</li>
+                    </ul>
+                    <p class="technologies">
+                        <strong>Technical Environment:</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
                     </p>
                 </article>
             </section>
