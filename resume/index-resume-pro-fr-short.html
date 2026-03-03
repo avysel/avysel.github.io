@@ -145,6 +145,21 @@
             padding-bottom: 0.4em;
         }
         
+        .document-title {
+            font-size: 12pt;
+            font-weight: 600;
+            margin-bottom: 0.7em;
+            color: var(--color-text);
+            text-align: center;
+        }
+        
+        .document-subtitle {
+            font-size: 10pt;
+            font-weight: 500;
+            display: block;
+            margin-top: 0.1em;
+        }
+        
         /* Profile section */
         .profile-section {
             margin-bottom: var(--spacing-section);
@@ -221,6 +236,10 @@
             position: absolute;
             left: 0;
             color: var(--color-text);
+        }
+        
+        .sidebar ul li::before {
+            color: var(--color-text-light);
         }
         
         /* Skills in sidebar */
@@ -398,7 +417,8 @@
                 display: flex !important;
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
-                width: 100%;
+                width: auto;
+                margin: 8mm;
             }
             
             .sidebar {
@@ -540,7 +560,7 @@
         <aside class="sidebar">
             <header>
             <h1>Alexandre Vanryssel</h1>
-                <div class="header-title">Tech Lead Freelance | Java, Blockchain, IA</div>
+                <div class="header-title"></div>
             <div class="contact-info">
                     <div>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -595,8 +615,13 @@
                                 <li>
                                     <strong>Blockchain :</strong>
                                     <ul>
-                            <li><strong>Ethereum :</strong> Solidity, Truffle, Remix, Web3.js</li>
+                            <li><strong>Ethereum, Avalanche :</strong> Solidity, Truffle, Remix, Web3.js</li>
                             <li><strong>Tezos :</strong> Ligo, Taquito</li>
+                            <li><strong>Sui :</strong>
+                                    <ul>
+                                        <li>Move</li>
+                                    </ul>
+                                </li>
                             <li><strong>Concepts :</strong> Smart contracts, consensus, gouvernance, DAG</li>
                                     </ul>
                                 </li>
@@ -657,11 +682,15 @@
         
         <!-- Right Main Content - 2/3 width, white background -->
         <main class="main-content">
+            <div class="document-title">
+                Tech Lead Freelance<br>
+                <span class="document-subtitle">Java, Blockchain, IA</span>
+            </div>
             <section class="profile-section">
                 <h2>Profil</h2>
                 <p class="profile-text">
                     Tech Lead expérimenté avec 15+ ans dans le développement logiciel, spécialisé en Java, Spring Boot, 
-                    blockchain (Ethereum, Tezos) et IA. Pilotage d'équipes pluridisciplinaires, conception d'architectures 
+                    blockchain (Ethereum, Tezos, Avalanche, Sui) et IA. Pilotage d'équipes pluridisciplinaires, conception d'architectures 
                     scalables, mise en œuvre de solutions DevOps/Cloud (Docker, Kubernetes, GCP, Azure).
                 </p>
             </section>
