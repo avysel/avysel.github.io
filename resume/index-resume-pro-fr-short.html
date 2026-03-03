@@ -19,7 +19,7 @@
             --color-text-light-muted: rgba(255, 255, 255, 0.9);
             --color-accent: #2563eb;
             --color-bg: #ffffff;
-            --color-bg-dark: #1e293b;
+            --color-bg-dark: #243b52;
             --color-bg-dark-accent: #334155;
             
             /* Typography */
@@ -140,7 +140,7 @@
         
         /* Main content sections */
         .main-content h2 {
-            color: var(--color-accent);
+            color: var(--color-bg-dark);
             border-bottom: 1px solid #e5e7eb;
             padding-bottom: 0.4em;
         }
@@ -429,7 +429,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                padding: 1.2em 0.8em;
+                padding: 0.7em 0.6em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -479,12 +479,18 @@
             
             .sidebar header {
                 page-break-after: avoid;
-                margin-bottom: 0.8em;
+                margin-bottom: 0.4em;
+            }
+            
+            .sidebar h2 {
+                padding-bottom: 0.3em;
+                margin-bottom: 0.4em;
             }
             
             .sidebar section {
                 page-break-inside: avoid;
                 page-break-before: avoid !important;
+                margin-bottom: 0.5em;
             }
             
             .sidebar section:first-of-type {
@@ -496,26 +502,33 @@
                 page-break-after: auto;
             }
             
-            /* Reduce spacing in sidebar for print to fit more content */
+            /* Reduce spacing in sidebar for print to fit more content on page 1 */
             .sidebar .skills-list {
-                margin-bottom: 0.4em;
+                margin-bottom: 0.3em;
             }
             
             .sidebar .skills-list > li {
-                margin-bottom: 0.5em;
+                margin-bottom: 0.35em;
             }
             
-            /* Optimize spacing for print */
-            .sidebar section {
-                margin-bottom: 0.6em;
+            .sidebar .skills-list > li strong {
+                margin-bottom: 0.2em;
+            }
+            
+            .sidebar .skills-list ul li {
+                margin-bottom: 0.08em;
+            }
+            
+            .sidebar .education-item {
+                margin-bottom: 0.4em;
+            }
+            
+            .sidebar .language-item {
+                margin-bottom: 0.35em;
             }
             
             .main-content section {
                 margin-bottom: 0.75em;
-            }
-            
-            .sidebar header {
-                margin-bottom: 0.6em;
             }
             
             .main-content header {
@@ -568,6 +581,13 @@
                             <circle cx="12" cy="10" r="3"/>
                         </svg>
                         <span>Lille, France</span>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <path d="M22 6l-10 7L2 6"/>
+                        </svg>
+                        <a href="mailto:avanryssel@gmail.com">avanryssel@gmail.com</a>
                     </div>
                     <div>
                         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -868,7 +888,6 @@
                     </div>
                     <div style="font-size: 8.5pt; color: var(--color-text-muted); margin-top: 0.2em;">
                         <div>Supinfo Lille - 2021</div>
-                        <div>Institut Mines-Télécom Lille - 2026</div>
                     </div>
                 </div>
             </section>
