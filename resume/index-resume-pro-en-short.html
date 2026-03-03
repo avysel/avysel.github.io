@@ -65,7 +65,15 @@
             color: var(--color-text-light);
             padding: 2em 1.5em;
         }
-        
+
+        .sidebar header {
+            margin-top: 0.5em;
+        }
+
+        .sidebar section:first-of-type {
+            margin-top: 0.6em;
+        }
+
         /* Right main content - 2/3 width, white background */
         .main-content {
             width: 66.666%;
@@ -417,8 +425,8 @@
                 display: flex !important;
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
-                width: auto;
-                margin: 8mm;
+                width: 100%;
+                margin: 0;
             }
             
             .sidebar {
@@ -429,7 +437,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                padding: 0.7em 0.6em;
+                padding: 0.7em 1.2em 0.7em 2em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -673,13 +681,11 @@
                 <h2>Education</h2>
                 <div class="education-item">
                     <div class="education-item-title">Engineering Degree in Computer Science and Statistics</div>
-                    <div class="education-item-school">Polytech'Lille</div>
-                    <div class="education-item-dates">2005-2008</div>
+                    <div class="education-item-school">Polytech'Lille — 2005-2008</div>
                 </div>
                 <div class="education-item">
                     <div class="education-item-title">DUT Computer Science</div>
-                    <div class="education-item-school">IUT de Lens</div>
-                    <div class="education-item-dates">2003-2005</div>
+                    <div class="education-item-school">IUT de Lens — 2003-2005</div>
                 </div>
             </section>
             

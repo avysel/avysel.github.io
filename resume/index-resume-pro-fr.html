@@ -65,7 +65,15 @@
             color: var(--color-text-light);
             padding: 2em 1.5em;
         }
-        
+
+        .sidebar header {
+            margin-top: 0.5em;
+        }
+
+        .sidebar section:first-of-type {
+            margin-top: 0.6em;
+        }
+
         /* Right main content - 2/3 width, white background */
         .main-content {
             width: 66.666%;
@@ -423,12 +431,16 @@
                 background: white;
             }
             
+            body.resume-long {
+                font-size: 9.5pt;
+            }
+            
             .resume-wrapper {
                 display: flex !important;
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
-                width: auto;
-                margin: 8mm;
+                width: 100%;
+                margin: 0;
             }
             
             .sidebar {
@@ -439,7 +451,8 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                padding: 0.7em 0.6em;
+                /* marge interne plus large en print pour décoller le texte du bord */
+                padding: 0.7em 1.2em 0.7em 2em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -468,7 +481,7 @@
                 display: none !important;
             }
             
-            /* Show URLs in print */
+            /* Show URLs in print (désactivé : on garde le rendu web)
             a[href]:after {
                 content: " (" attr(href) ")";
                 font-size: 8pt;
@@ -476,10 +489,10 @@
                 font-weight: normal;
             }
             
-            /* URLs in sidebar should be white for visibility */
             .sidebar a[href]:after {
                 color: var(--color-text-light) !important;
             }
+            */
             
             /* Allow sections to break across pages, but avoid breaking articles */
             .main-content section {
@@ -544,6 +557,67 @@
             .main-content header {
                 margin-bottom: 1em;
             }
+            
+            /* Long version: tighter sidebar so Compétences stays on page 1 */
+            .resume-long .sidebar {
+                padding: 0.5em 0.5em 0.4em 1em;
+            }
+            .resume-long .sidebar header {
+                margin-bottom: 0.25em;
+            }
+            .resume-long .sidebar h1 {
+                font-size: 14pt;
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .header-title {
+                margin-bottom: 0.5em;
+            }
+            .resume-long .sidebar .contact-info {
+                font-size: 8pt;
+                /* petit espace au-dessus et en dessous du bloc infos perso */
+                margin: 0.3em 0 0.3em;
+                padding: 0.15em 0;
+            }
+            .resume-long .sidebar .contact-info div {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar h2 {
+                padding-bottom: 0.2em;
+                margin-bottom: 0.25em;
+                font-size: 10pt;
+            }
+            .resume-long .sidebar section {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .skills-list {
+                margin-bottom: 0.2em;
+            }
+            .resume-long .sidebar .skills-list > li {
+                margin-bottom: 0.28em;
+            }
+            .resume-long .sidebar .skills-list > li strong {
+                font-size: 9pt;
+                margin-bottom: 0.15em;
+            }
+            .resume-long .sidebar .skills-list ul li {
+                font-size: 8pt;
+                margin-bottom: 0.05em;
+            }
+            .resume-long .sidebar .education-item-title,
+            .resume-long .sidebar .education-item-school,
+            .resume-long .sidebar .education-item-dates {
+                font-size: 8pt;
+            }
+            .resume-long .sidebar .education-item {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .language-item {
+                margin-bottom: 0.28em;
+            }
+            .resume-long .sidebar .language-name,
+            .resume-long .sidebar .language-level {
+                font-size: 8pt;
+            }
         }
         
         /* Web version */
@@ -573,7 +647,7 @@
         }
     </style>
 </head>
-<body>
+<body class="resume-long">
     <div class="resume-wrapper">
         <!-- Left Sidebar - 1/3 width, dark background -->
         <aside class="sidebar">
@@ -679,13 +753,11 @@
                 <h2>Formation</h2>
                 <div class="education-item">
                     <div class="education-item-title">Ingénieur en Informatique et Statistique</div>
-                    <div class="education-item-school">Polytech'Lille</div>
-                    <div class="education-item-dates">2005-2008</div>
+                    <div class="education-item-school">Polytech'Lille — 2005-2008</div>
                 </div>
                 <div class="education-item">
                     <div class="education-item-title">DUT Informatique</div>
-                    <div class="education-item-school">IUT de Lens</div>
-                    <div class="education-item-dates">2003-2005</div>
+                    <div class="education-item-school">IUT de Lens — 2003-2005</div>
                 </div>
             </section>
             
