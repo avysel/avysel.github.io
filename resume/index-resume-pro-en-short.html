@@ -25,7 +25,7 @@
             /* Typography */
             --font-family: 'Inter', 'Roboto', 'Lato', Arial, sans-serif;
             --font-size-body: 9.5pt;
-            --font-size-heading: 11pt;
+            --font-size-heading: 12pt;
             --font-size-name: 16pt;
             --line-height: 1.4;
             
@@ -136,6 +136,7 @@
         h2 {
             font-size: var(--font-size-heading);
             font-weight: 600;
+            padding-top: 0.5em;
             margin-bottom: 0.5em;
         }
         
@@ -408,7 +409,7 @@
         @media print {
             @page {
                 size: A4;
-                margin: 0;
+                margin: 2em;
             }
             
             html, body {
@@ -437,7 +438,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                padding: 0.7em 1.2em 0.7em 2em;
+                padding: 2em 1.5em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -449,17 +450,7 @@
                 min-width: 66.666% !important;
                 float: none !important;
                 background: var(--color-bg);
-                padding: 1.5em 1.5em;
-                padding-top: 2.5em;
-            }
-            
-            /* Add extra top padding for content that starts on a new page */
-            .main-content section {
-                padding-top: 0.5em;
-            }
-            
-            .main-content section:first-child {
-                padding-top: 0;
+                padding: 2em 2em;
             }
             
             .no-print {
@@ -922,16 +913,17 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Tezos Testnet Faucet</div>
+                            <div class="experience-title">Solving Cain's Jawbone</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Early 2022</div>
+                        <div class="experience-dates">Since early 2025</div>
                     </div>
                     <ul>
-                        <li>Personal development initially. Obtained funding from the Tezos Foundation to evolve it and integrate it as an official faucet. Handover to OxheadAlpha and maintenance, before its transfer to the foundation.</li>
+                        <li>AI-based tool to solve <em>Cain's Jawbone</em>, a complex literary problem. 
+                        Definition of entities/relationships in FR/EN texts, data extraction prompts, vector databases, knowledge graph to improve vector search.</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Tech:</strong> React, Taquito, Tezos, Github Actions, Netlify
+                        <strong>Tech:</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph
                     </p>
                 </article>
                 
@@ -954,17 +946,16 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Solving Cain's Jawbone</div>
+                            <div class="experience-title">Tezos Testnet Faucet</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Since early 2025</div>
+                        <div class="experience-dates">Early 2022</div>
                     </div>
                     <ul>
-                        <li>AI-based tool to solve <em>Cain's Jawbone</em>, a complex literary problem. 
-                        Definition of entities/relationships in FR/EN texts, data extraction prompts, vector databases, knowledge graph to improve vector search.</li>
+                        <li>Personal development initially. Obtained funding from the Tezos Foundation to evolve it and integrate it as an official faucet. Handover to OxheadAlpha and maintenance, before its transfer to the foundation.</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Tech:</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph
+                        <strong>Tech:</strong> React, Taquito, Tezos, Github Actions, Netlify
                     </p>
                 </article>
             </section>

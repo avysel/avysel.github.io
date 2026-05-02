@@ -25,7 +25,7 @@
             /* Typography */
             --font-family: 'Inter', 'Roboto', 'Lato', Arial, sans-serif;
             --font-size-body: 10pt;
-            --font-size-heading: 12pt;
+            --font-size-heading: 13pt;
             --font-size-name: 18pt;
             --line-height: 1.5;
             
@@ -136,6 +136,7 @@
         h2 {
             font-size: var(--font-size-heading);
             font-weight: 600;
+            padding-top: 0.5em;
             margin-bottom: 0.75em;
         }
         
@@ -418,7 +419,8 @@
         @media print {
             @page {
                 size: A4;
-                margin: 0;
+                /* Same outer spacing as web (body padding 2em) */
+                margin: 2em;
             }
             
             html, body {
@@ -451,8 +453,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                /* extra inner margin in print so text doesn't stick to page edge */
-                padding: 0.7em 1.2em 0.7em 2em;
+                padding: 2em 1.5em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -464,17 +465,7 @@
                 min-width: 66.666% !important;
                 float: none !important;
                 background: var(--color-bg);
-                padding: 1.5em 1.5em;
-                padding-top: 2.5em;
-            }
-            
-            /* Add extra top padding for content that starts on a new page */
-            .main-content section {
-                padding-top: 0.5em;
-            }
-            
-            .main-content section:first-child {
-                padding-top: 0;
+                padding: 2em 2em;
             }
             
             .no-print {
@@ -558,11 +549,7 @@
                 margin-bottom: 1em;
             }
             
-            /* Long version: tighter sidebar so Skills stays on page 1
-               (keep some air on top but compress bottom and allow splits) */
-            .resume-long .sidebar {
-                padding: 0.6em 0.5em 0.4em 1em;
-            }
+            /* Long version: typography / layout tweaks (margins match web) */
             .resume-long .sidebar header {
                 margin-bottom: 0.25em;
             }
@@ -585,7 +572,7 @@
             .resume-long .sidebar h2 {
                 padding-bottom: 0.2em;
                 margin-bottom: 0.25em;
-                font-size: 10pt;
+                font-size: 11pt;
             }
             .resume-long .sidebar section {
                 page-break-inside: auto;
@@ -1085,21 +1072,22 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Tezos Testnet Faucet</div>
+                            <div class="experience-title">Solving Cain's Jawbone</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Early 2022</div>
+                        <div class="experience-dates">Since early 2025</div>
                     </div>
                     <div class="experience-description">
-                        Development of a Faucet for Tezos testnets, allowing distribution of Tez tokens to Tezos addresses.
+                        Development of an AI-based tool to facilitate the resolution of <em>Cain's Jawbone</em>, a complex literary problem.
                     </div>
                     <ul>
-                        <li>Personal development initially</li>
-                        <li>Obtained funding from the Tezos Foundation to evolve it and integrate it as an official faucet</li>
-                        <li>Handover to OxheadAlpha and maintenance, before its transfer to the foundation</li>
+                        <li>Definition of entities and relationships in French and English texts of the work</li>
+                        <li>Writing prompts for data extraction and structuring</li>
+                        <li>Use of vector databases for storage and search</li>
+                        <li>Creation of a knowledge graph to improve the relevance of vector search</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Technical Environment:</strong> React, Taquito, Tezos, Github Actions, Netlify
+                        <strong>Technical Environment:</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
                     </p>
                 </article>
                 
@@ -1126,22 +1114,21 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Solving Cain's Jawbone</div>
+                            <div class="experience-title">Tezos Testnet Faucet</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Since early 2025</div>
+                        <div class="experience-dates">Early 2022</div>
                     </div>
                     <div class="experience-description">
-                        Development of an AI-based tool to facilitate the resolution of <em>Cain's Jawbone</em>, a complex literary problem.
+                        Development of a Faucet for Tezos testnets, allowing distribution of Tez tokens to Tezos addresses.
                     </div>
                     <ul>
-                        <li>Definition of entities and relationships in French and English texts of the work</li>
-                        <li>Writing prompts for data extraction and structuring</li>
-                        <li>Use of vector databases for storage and search</li>
-                        <li>Creation of a knowledge graph to improve the relevance of vector search</li>
+                        <li>Personal development initially</li>
+                        <li>Obtained funding from the Tezos Foundation to evolve it and integrate it as an official faucet</li>
+                        <li>Handover to OxheadAlpha and maintenance, before its transfer to the foundation</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Technical Environment:</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
+                        <strong>Technical Environment:</strong> React, Taquito, Tezos, Github Actions, Netlify
                     </p>
                 </article>
             </section>

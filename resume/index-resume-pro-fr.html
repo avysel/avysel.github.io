@@ -25,7 +25,7 @@
             /* Typography */
             --font-family: 'Inter', 'Roboto', 'Lato', Arial, sans-serif;
             --font-size-body: 10pt;
-            --font-size-heading: 12pt;
+            --font-size-heading: 13pt;
             --font-size-name: 18pt;
             --line-height: 1.5;
             
@@ -136,6 +136,7 @@
         h2 {
             font-size: var(--font-size-heading);
             font-weight: 600;
+            padding-top: 0.5em;
             margin-bottom: 0.75em;
         }
         
@@ -418,7 +419,8 @@
         @media print {
             @page {
                 size: A4;
-                margin: 0;
+                /* Même dégagement que la version web (body padding 2em) */
+                margin: 2em;
             }
             
             html, body {
@@ -451,8 +453,7 @@
                 float: none !important;
                 background: var(--color-bg-dark);
                 color: var(--color-text-light);
-                /* marge interne plus large en print pour décoller le texte du bord */
-                padding: 0.7em 1.2em 0.7em 2em;
+                padding: 2em 1.5em;
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -464,17 +465,7 @@
                 min-width: 66.666% !important;
                 float: none !important;
                 background: var(--color-bg);
-                padding: 1.5em 1.5em;
-                padding-top: 2.5em;
-            }
-            
-            /* Add extra top padding for content that starts on a new page */
-            .main-content section {
-                padding-top: 0.5em;
-            }
-            
-            .main-content section:first-child {
-                padding-top: 0;
+                padding: 2em 2em;
             }
             
             .no-print {
@@ -558,10 +549,7 @@
                 margin-bottom: 1em;
             }
             
-            /* Long version: tighter sidebar so Compétences stays on page 1 */
-            .resume-long .sidebar {
-                padding: 0.5em 0.5em 0.4em 1em;
-            }
+            /* Long version: micro-ajustements typo / grilles (marges comme le web) */
             .resume-long .sidebar header {
                 margin-bottom: 0.25em;
             }
@@ -584,7 +572,7 @@
             .resume-long .sidebar h2 {
                 padding-bottom: 0.2em;
                 margin-bottom: 0.25em;
-                font-size: 10pt;
+                font-size: 11pt;
             }
             .resume-long .sidebar section {
                 margin-bottom: 0.35em;
@@ -1077,21 +1065,22 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Faucet pour les testnet Tezos</div>
+                            <div class="experience-title">Résolution de la Machoire de Caïn</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Début 2022</div>
+                        <div class="experience-dates">Depuis début 2025</div>
                     </div>
                     <div class="experience-description">
-                        Développement d'un Faucet pour les testnet Tezos, permettant de distribuer des tokens Tez à des adresses Tezos.
+                        Développement d'un outil basé sur l'IA pour faciliter la résolution de la <em>Mâchoire de Caïn</em>, un problème littéraire complexe.
                     </div>
                     <ul>
-                        <li>Développement personnel dans un premier temps</li>
-                        <li>Obtention d'un financement de la fondation Tezos pour le faire évoluer et l'intégrer comme faucet officiel</li>
-                        <li>Passation à OxheadAlpha et maintenance, avant son transfert à la fondation</li>
+                        <li>Définition des entités et relations des textes français et anglais de l'oeuvre</li>
+                        <li>Rédaction de prompts pour extraction de données et leur structuration</li>
+                        <li>Utilisation de bases de données vectorielles pour le stockage et la recherche</li>
+                        <li>Création d'un knowledge graph pour améliorer la pertinence de la recherche vectorielle</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Environnement technique :</strong> React, Taquito, Tezos, Github Actions, Netlify
+                        <strong>Environnement technique :</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
                     </p>
                 </article>
                 
@@ -1118,22 +1107,21 @@
                 <article>
                     <div class="experience-header">
                         <div>
-                            <div class="experience-title">Résolution de la Machoire de Caïn</div>
+                            <div class="experience-title">Faucet pour les testnet Tezos</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Depuis début 2025</div>
+                        <div class="experience-dates">Début 2022</div>
                     </div>
                     <div class="experience-description">
-                        Développement d'un outil basé sur l'IA pour faciliter la résolution de la <em>Mâchoire de Caïn</em>, un problème littéraire complexe.
+                        Développement d'un Faucet pour les testnet Tezos, permettant de distribuer des tokens Tez à des adresses Tezos.
                     </div>
                     <ul>
-                        <li>Définition des entités et relations des textes français et anglais de l'oeuvre</li>
-                        <li>Rédaction de prompts pour extraction de données et leur structuration</li>
-                        <li>Utilisation de bases de données vectorielles pour le stockage et la recherche</li>
-                        <li>Création d'un knowledge graph pour améliorer la pertinence de la recherche vectorielle</li>
+                        <li>Développement personnel dans un premier temps</li>
+                        <li>Obtention d'un financement de la fondation Tezos pour le faire évoluer et l'intégrer comme faucet officiel</li>
+                        <li>Passation à OxheadAlpha et maintenance, avant son transfert à la fondation</li>
                     </ul>
                     <p class="technologies">
-                        <strong>Environnement technique :</strong> Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
+                        <strong>Environnement technique :</strong> React, Taquito, Tezos, Github Actions, Netlify
                     </p>
                 </article>
             </section>
