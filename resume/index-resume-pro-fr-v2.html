@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandre Vanryssel - CV (1 page)</title>
+    <meta name="description" content="Alexandre Vanryssel - Tech Lead freelance, 15+ ans d'expérience. Java, Spring Boot, architectures distribuées, Kubernetes, GCP, Azure. Blockchain (Ethereum, Tezos, Sui), IA appliquée (RAG). Pilotage d'équipes tech et bonnes pratiques qualité / sécurité / observabilité.">
+    <title>Alexandre Vanryssel - Tech Lead freelance | CV</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alexandre Vanryssel",
+      "jobTitle": "Tech Lead freelance",
+      "email": "avanryssel@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lille",
+        "addressCountry": "FR"
+      },
+      "url": "https://www.linkedin.com/in/alexandre-vanryssel",
+      "sameAs": [
+        "https://www.linkedin.com/in/alexandre-vanryssel",
+        "https://github.com/avysel",
+        "https://www.instampy.fr/"
+      ],
+      "knowsAbout": [
+        "Java",
+        "Spring Boot",
+        "Architecture logicielle",
+        "Kubernetes",
+        "Google Cloud Platform",
+        "Microsoft Azure",
+        "Blockchain",
+        "Tezos",
+        "Ethereum",
+        "Intelligence artificielle",
+        "RAG",
+        "DevOps",
+        "MongoDB",
+        "PostgreSQL",
+        "Kafka"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Polytech Lille"
+      }
+    }
+    </script>
     
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,19 +61,19 @@
             --color-text-light-muted: rgba(255, 255, 255, 0.9);
             --color-accent: #2563eb;
             --color-bg: #ffffff;
-            --color-bg-dark: #243b52;
+            --color-bg-dark: #243b52; /* Dark blue background for sidebar */
             --color-bg-dark-accent: #334155;
             
             /* Typography */
             --font-family: 'Inter', 'Roboto', 'Lato', Arial, sans-serif;
-            --font-size-body: 9.5pt;
-            --font-size-heading: 12pt;
-            --font-size-name: 16pt;
-            --line-height: 1.4;
+            --font-size-body: 10pt;
+            --font-size-heading: 13pt;
+            --font-size-name: 18pt;
+            --line-height: 1.5;
             
-            /* Spacing - Tighter for 1 page */
-            --spacing-section: 1em;
-            --spacing-item: 0.5em;
+            /* Spacing */
+            --spacing-section: 1.5em;
+            --spacing-item: 0.75em;
         }
         
         * {
@@ -55,7 +97,7 @@
         
         .resume-wrapper {
             display: flex;
-            min-height: 297mm;
+            min-height: 297mm; /* A4 height */
         }
         
         /* Left sidebar - 1/3 width, dark background */
@@ -137,7 +179,7 @@
             font-size: var(--font-size-heading);
             font-weight: 600;
             padding-top: 0.5em;
-            margin-bottom: 0.5em;
+            margin-bottom: 0.75em;
         }
         
         /* Sidebar sections */
@@ -151,22 +193,22 @@
         .main-content h2 {
             color: var(--color-bg-dark);
             border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 0.4em;
+            padding-bottom: 0.5em;
         }
         
         .document-title {
-            font-size: 12pt;
+            font-size: 14pt;
             font-weight: 600;
-            margin-bottom: 0.7em;
+            margin-bottom: 0.85em;
             color: var(--color-text);
             text-align: center;
         }
         
         .document-subtitle {
-            font-size: 10pt;
+            font-size: 11pt;
             font-weight: 500;
             display: block;
-            margin-top: 0.1em;
+            margin-top: 0.15em;
         }
         
         /* Profile section */
@@ -175,57 +217,72 @@
         }
         
         .profile-text {
-            font-size: 9.5pt;
+            font-size: 10pt;
             color: var(--color-text);
-            margin-bottom: 0.5em;
-            line-height: 1.4;
+            margin-bottom: 0.75em;
+            line-height: 1.5;
         }
         
         .profile-text:last-child {
             margin-bottom: 0;
         }
         
-        /* Articles */
+        /* Articles (experiences, education items) */
         article {
-            margin-bottom: 1.2em;
-            margin-top: 0.8em;
-            padding-top: 0.8em;
+            margin-bottom: 1.5em;
+            margin-top: 1em;
+            padding-top: 1em;
             border-top: 1px solid #e5e7eb;
         }
         
         article:first-of-type {
             border-top: none;
             padding-top: 0;
-            margin-top: 0.6em;
+            margin-top: 0.75em;
         }
         
         article:last-child {
             margin-bottom: 0;
         }
         
-        .experience-header {
+        .experience-header,
+        .education-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.5em;
         }
         
-        .experience-title {
+        .experience-title,
+        .education-title {
             font-weight: 600;
             color: var(--color-text);
+            font-size: 10.5pt;
+        }
+        
+        .experience-company,
+        .education-school {
+            font-weight: 500;
+            color: var(--color-text-muted);
             font-size: 10pt;
         }
         
-        .experience-company {
-            font-weight: 500;
-            color: var(--color-text-muted);
-            font-size: 9.5pt;
-        }
-        
-        .experience-dates {
-            font-size: 8.5pt;
+        .experience-dates,
+        .education-dates {
+            font-size: 9pt;
             color: var(--color-text-muted);
             white-space: nowrap;
+        }
+        
+        .experience-dates time {
+            font: inherit;
+            color: inherit;
+        }
+        
+        .experience-description {
+            margin-bottom: 0.5em;
+            font-size: 10pt;
+            color: var(--color-text-muted);
         }
         
         ul {
@@ -235,9 +292,9 @@
         
         ul li {
             position: relative;
-            padding-left: 0.8em;
-            margin-bottom: 0.15em;
-            font-size: 9.5pt;
+            padding-left: 1em;
+            margin-bottom: 0.25em;
+            font-size: 10pt;
         }
         
         ul li::before {
@@ -352,16 +409,16 @@
         
         /* Technologies paragraph */
         .technologies {
-            font-size: 8.5pt;
+            font-size: 9pt;
             color: var(--color-text-muted);
             font-style: italic;
-            margin-top: 0.4em;
+            margin-top: 0.5em;
         }
         
         /* Teaching items - more compact format */
         .teaching-item {
-            margin-bottom: 0.8em;
-            padding-top: 0.6em;
+            margin-bottom: 1em;
+            padding-top: 0.75em;
             border-top: 1px solid #e5e7eb;
         }
         
@@ -378,29 +435,29 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.2em;
+            margin-bottom: 0.25em;
         }
         
         .teaching-title {
             font-weight: 600;
             color: var(--color-text);
-            font-size: 9.5pt;
+            font-size: 10pt;
         }
         
         .teaching-school {
             font-weight: 500;
             color: var(--color-text-muted);
-            font-size: 9pt;
+            font-size: 9.5pt;
         }
         
         .teaching-dates {
-            font-size: 8.5pt;
+            font-size: 9pt;
             color: var(--color-text-muted);
             white-space: nowrap;
         }
         
         .teaching-duration {
-            font-size: 8.5pt;
+            font-size: 9pt;
             color: var(--color-text-muted);
             font-style: italic;
         }
@@ -409,6 +466,7 @@
         @media print {
             @page {
                 size: A4;
+                /* Même dégagement que la version web (body padding 2em) */
                 margin: 2em;
             }
             
@@ -418,8 +476,12 @@
             }
             
             body {
-                font-size: 9.5pt;
+                font-size: 10pt;
                 background: white;
+            }
+            
+            body.resume-long {
+                font-size: 9.5pt;
             }
             
             .resume-wrapper {
@@ -457,18 +519,18 @@
                 display: none !important;
             }
             
-            /* Show URLs in print */
+            /* Show URLs in print (désactivé : on garde le rendu web)
             a[href]:after {
                 content: " (" attr(href) ")";
-                font-size: 7.5pt;
+                font-size: 8pt;
                 color: var(--color-text-muted);
                 font-weight: normal;
             }
             
-            /* URLs in sidebar should be white for visibility */
             .sidebar a[href]:after {
                 color: var(--color-text-light) !important;
             }
+            */
             
             /* Allow sections to break across pages, but avoid breaking articles */
             .main-content section {
@@ -507,35 +569,89 @@
             }
             
             .sidebar .skills-list > li {
-                margin-bottom: 0.35em;
-            }
-            
-            .sidebar .skills-list > li strong {
-                margin-bottom: 0.2em;
-            }
-            
-            .sidebar .skills-list ul li {
-                margin-bottom: 0.08em;
-            }
-            
-            .sidebar .education-item {
                 margin-bottom: 0.4em;
             }
             
+            .sidebar .skills-list > li strong {
+                margin-bottom: 0.25em;
+            }
+            
+            .sidebar .skills-list ul li {
+                margin-bottom: 0.1em;
+            }
+            
+            .sidebar .education-item {
+                margin-bottom: 0.5em;
+            }
+            
             .sidebar .language-item {
-                margin-bottom: 0.35em;
+                margin-bottom: 0.4em;
             }
             
             .main-content section {
-                margin-bottom: 0.75em;
+                margin-bottom: 1em;
             }
             
             .main-content header {
-                margin-bottom: 0.75em;
+                margin-bottom: 1em;
             }
             
-            ul li {
-                margin-bottom: 0.1em;
+            /* Long version: micro-ajustements typo / grilles (marges comme le web) */
+            .resume-long .sidebar header {
+                margin-bottom: 0.25em;
+            }
+            .resume-long .sidebar h1 {
+                font-size: 14pt;
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .header-title {
+                margin-bottom: 0.5em;
+            }
+            .resume-long .sidebar .contact-info {
+                font-size: 8pt;
+                /* petit espace au-dessus et en dessous du bloc infos perso */
+                margin: 0.3em 0 0.3em;
+                padding: 0.15em 0;
+            }
+            .resume-long .sidebar .contact-info div {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar h2 {
+                padding-bottom: 0.2em;
+                margin-bottom: 0.25em;
+                font-size: 11pt;
+            }
+            .resume-long .sidebar section {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .skills-list {
+                margin-bottom: 0.2em;
+            }
+            .resume-long .sidebar .skills-list > li {
+                margin-bottom: 0.28em;
+            }
+            .resume-long .sidebar .skills-list > li strong {
+                font-size: 9pt;
+                margin-bottom: 0.15em;
+            }
+            .resume-long .sidebar .skills-list ul li {
+                font-size: 8pt;
+                margin-bottom: 0.05em;
+            }
+            .resume-long .sidebar .education-item-title,
+            .resume-long .sidebar .education-item-school,
+            .resume-long .sidebar .education-item-dates {
+                font-size: 8pt;
+            }
+            .resume-long .sidebar .education-item {
+                margin-bottom: 0.35em;
+            }
+            .resume-long .sidebar .language-item {
+                margin-bottom: 0.28em;
+            }
+            .resume-long .sidebar .language-name,
+            .resume-long .sidebar .language-level {
+                font-size: 8pt;
             }
         }
         
@@ -566,13 +682,13 @@
         }
     </style>
 </head>
-<body>
+<body class="resume-long">
     <div class="resume-wrapper">
         <!-- Left Sidebar - 1/3 width, dark background -->
         <aside class="sidebar">
             <header>
             <h1>Alexandre Vanryssel</h1>
-                <div class="header-title"></div>
+                <div class="header-title">Tech Lead freelance · Java, cloud, blockchain &amp; IA</div>
             <div class="contact-info">
                     <div>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -592,13 +708,13 @@
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
-                        <a href="https://linkedin.com/in/alexandre-vanryssel" target="_blank">linkedin.com/in/alexandre-vanryssel</a>
+                        <a href="https://www.linkedin.com/in/alexandre-vanryssel" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-vanryssel</a>
                     </div>
                     <div>
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
-                        <a href="https://github.com/avysel" target="_blank">github.com/avysel</a>
+                        <a href="https://github.com/avysel" target="_blank" rel="noopener noreferrer">github.com/avysel</a>
                     </div>
             </div>
             </header>
@@ -607,62 +723,65 @@
                 <h2>Compétences</h2>
                             <ul class="skills-list">
                                 <li>
-                        <strong>Langages de programmation :</strong>
+                                    <strong>Langages :</strong>
                                     <ul>
-                                        <li>Java, Javascript, Typescript, HTML, CSS, Python, Solidity, Ligo, PHP</li>
+                                        <li>Java, JavaScript, TypeScript, Python, Solidity, Ligo, PHP</li>
                                     </ul>
                                 </li>
                                 <li>
-                        <strong>Frameworks et outils :</strong>
+                                    <strong>Front-end &amp; Web :</strong>
                                     <ul>
-                            <li>Spring Boot, Spring, React, Angular, Vue.js</li>
-                            <li>Kafka, Redis</li>
+                                        <li>HTML, CSS, React, Angular, Vue.js</li>
                                     </ul>
                                 </li>
                                 <li>
-                        <strong>Base de données :</strong>
+                                    <strong>Back-end Java :</strong>
                                     <ul>
-                                        <li>MongoDB, PostgreSQL, Neo4J, Oracle</li>
+                                        <li>Spring Boot, Spring Framework</li>
                                     </ul>
                                 </li>
                                 <li>
-                        <strong>DevOps et Cloud :</strong>
+                                    <strong>Bases de données, cache &amp; messaging :</strong>
                                     <ul>
-                            <li>Docker, Kubernetes, GCP, Azure, Gitlab et Gitlab CI, Github et Github Actions</li>
+                                        <li>MongoDB, PostgreSQL, Neo4j, Oracle</li>
+                                        <li>Redis, Apache Kafka</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Cloud &amp; DevOps :</strong>
+                                    <ul>
+                                        <li>Docker, Kubernetes, GCP, Azure</li>
+                                        <li>GitLab, GitLab CI/CD, GitHub, GitHub Actions</li>
                                     </ul>
                                 </li>
                                 <li>
                                     <strong>Blockchain :</strong>
                                     <ul>
-                            <li><strong>Ethereum, Avalanche :</strong> Solidity, Truffle, Remix, Web3.js</li>
-                            <li><strong>Tezos :</strong> Ligo, Taquito</li>
-                            <li><strong>Sui :</strong>
-                                    <ul>
-                                        <li>Move</li>
-                                    </ul>
-                                </li>
-                            <li><strong>Concepts :</strong> Smart contracts, consensus, gouvernance, DAG</li>
+                                        <li><strong>Ethereum, Avalanche :</strong> Solidity, Truffle, Remix, Web3.js</li>
+                                        <li><strong>Tezos :</strong> Ligo, Taquito</li>
+                                        <li><strong>Sui :</strong> Move</li>
+                                        <li><strong>Concepts :</strong> smart contracts, consensus, gouvernance, DAG</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>IA :</strong>
+                                    <strong>IA &amp; data science :</strong>
                                     <ul>
-                            <li>Python, Jupyter, Ollama, OpenWebUI</li>
-                            <li>Knowledge Graph, Vectorisation et embeddings</li>
-                            <li>Atlas Vector Search, PGVector, Neo4J</li>
-                            <li>Prompt engineering, MCP</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Outils de test et monitoring :</strong>
-                        <ul>
-                            <li>Postman, Bruno, Gatling, Datadog</li>
+                                        <li>Jupyter, Ollama, OpenWebUI</li>
+                                        <li>RAG, knowledge graph, vectorisation / embeddings</li>
+                                        <li>MongoDB Atlas Vector Search, PGVector, Neo4j</li>
+                                        <li>Prompt engineering, MCP</li>
                                     </ul>
                                 </li>
                                 <li>
-                        <strong>Autres compétences :</strong>
+                                    <strong>Tests &amp; observabilité :</strong>
                                     <ul>
-                            <li>Scrum (<a href="https://www.scrum.org/user/594885" target="_blank">certifié PSM1</a>)</li>
+                                        <li>Postman, Bruno, Gatling, Datadog</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Méthodes :</strong>
+                                    <ul>
+                                        <li>Agile, Scrum (<a href="https://www.scrum.org/user/594885" target="_blank">certifié PSM I</a>)</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -695,41 +814,55 @@
                     <div class="language-level">Notions</div>
                 </div>
             </section>
+            
+            <section aria-label="Domaines métier">
+                <h2>Domaines métier</h2>
+                <p style="font-size: 9pt; color: var(--color-text-light-muted); line-height: 1.45; margin: 0;">
+                    Retail &amp; e-commerce (Adeo, Leroy Merlin, Norauto), banque &amp; paiement (Oney), assurance (Humanis), secteur public.
+                </p>
+            </section>
         </aside>
         
         <!-- Right Main Content - 2/3 width, white background -->
         <main class="main-content">
             <div class="document-title">
-                Tech Lead Freelance<br>
-                <span class="document-subtitle">Java, Blockchain, IA</span>
+                Tech Lead freelance<br>
+                <span class="document-subtitle">Java · Cloud · Blockchain · IA appliquée</span>
             </div>
             <section class="profile-section">
-                <h2>Profil</h2>
+                <h2>Profil professionnel</h2>
                 <p class="profile-text">
-                    Tech Lead expérimenté avec 15+ ans dans le développement logiciel, spécialisé en Java, Spring Boot, 
-                    blockchain (Ethereum, Tezos, Avalanche, Sui) et IA. Pilotage d'équipes pluridisciplinaires, conception d'architectures 
-                    scalables, mise en œuvre de solutions DevOps/Cloud (Docker, Kubernetes, GCP, Azure).
+                    Tech Lead avec plus de <strong>15 ans d'expérience</strong>, spécialisé en <strong>Java</strong> et <strong>Spring Boot</strong>, architectures distribuées et produits critiques chez des grands comptes (retail, finance). Pilotage d'équipes techniques jusqu'à environ 12 personnes, recrutement, définition d'architecture et accompagnement livraison (qualité, sécurité, observabilité, exploitation).
+                </p>
+                <p class="profile-text">
+                    Expertise complémentaire en <strong>DevOps et cloud</strong> (Docker, Kubernetes, <strong>GCP</strong>, <strong>Azure</strong>, CI/CD), en <strong>blockchain</strong> (Ethereum, Tezos, Avalanche, Sui, smart contracts) et en <strong>IA appliquée</strong> (RAG, graphes de connaissances, évaluation de modèles). Certifié <strong>Scrum PSM I</strong>.
                 </p>
             </section>
             
             <section>
-                <h2>Expériences</h2>
+                <h2>Expériences professionnelles</h2>
                 
                 <article>
                     <div class="experience-header">
                         <div>
                             <div class="experience-title">Tech Lead</div>
-                            <div class="experience-company">Astek (jusque fév 2025), puis Freelance, pour Adeo</div>
+                            <div class="experience-company">Adeo - Astek (jusqu'à févr. 2025), puis freelance</div>
                         </div>
-                        <div class="experience-dates">Jan 2023 - Présent</div>
+                        <div class="experience-dates"><time datetime="2023-01">Janv. 2023</time> - présent</div>
+                    </div>
+                    <div class="experience-description">
+                        Pilotage technique d'une équipe d'environ 10 personnes sur plusieurs produits logiciels du périmètre costing (retail).
                     </div>
                     <ul>
-                        <li>Tech lead dans une équipe de 10 personnes sur produits costing. Architecture, conception technique, 
-                        politiques transverses (qualité, sécurité, observabilité), recrutement.</li>
-                        <li>Développement, CI/CD et Ops</li>
+                        <li>Architecture et conception ; développement ; chaînes CI/CD et exploitation</li>
+                        <li>Déploiement des politiques transverses : qualité, sécurité, observabilité et fiabilité en production</li>
+                        <li>Animation technique et alignement avec les parties prenantes métier et transverses</li>
+                        <li>Recrutement et intégration des nouveaux membres</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Java, Spring Boot, MongoDB, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP
+                        Environnement technique : Java, Spring, Spring Boot, MongoDB, Mongo Atlas, 
+                        Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP, Github, Github Actions, 
+                        Postman, Bruno, Gatling, Datadog.
                     </p>
                 </article>
                 
@@ -737,12 +870,17 @@
                     <div class="experience-header">
                         <div>
                             <div class="experience-title">Engineering Manager</div>
-                            <div class="experience-company">Marigold</div>
-                            </div>
-                        <div class="experience-dates">Oct 2022 - Déc 2022</div>
+                            <div class="experience-company">Marigold - écosystème blockchain Tezos</div>
+                        </div>
+                        <div class="experience-dates"><time datetime="2022-10">Oct. 2022</time> - <time datetime="2022-12">Déc. 2022</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Management de l'équipe responsable de Ligo, langage de smart contracts officiel de la blockchain Tezos.
                             </div>
                     <ul>
-                        <li>Manager de l'équipe développant Ligo (langage de smart contract Tezos). Équipe de 12 personnes réparties dans le monde.</li>
+                        <li>Management d'une équipe de 12 personnes répartie à l'international</li>
+                        <li>Priorisation et cadence des évolutions du langage et de l'outil</li>
+                        <li>Mise en place d'un registry de bibliothèques pour l'écosystème développeur</li>
                     </ul>
                 </article>
                 
@@ -750,17 +888,32 @@
                     <div class="experience-header">
                         <div>
                             <div class="experience-title">Cellule Innovation / Référent blockchain / IA</div>
-                            <div class="experience-company">Ineat Lab / Innovation Lab (Astek)</div>
+                            <div class="experience-company">Ineat Lab (Ineat Group), puis Innovation Lab (Astek)</div>
                         </div>
-                        <div class="experience-dates">2018 - 2025</div>
+                        <div class="experience-dates"><time datetime="2018">2018</time> - <time datetime="2025">2025</time></div>
                     </div>
+                    <div class="experience-description">
+                        Référent blockchain et IA : veille, prototypes, formations et soutien aux réponses appels d'offres.
+                    </div>
+                    <p style="margin-top: 0.5em; margin-bottom: 0.25em;">Blockchain :</p>
                     <ul>
-                        <li>Veille technologique blockchain et IA. POCs, études de cas, formation interne, articles, conférences. 
-                        Études RAG/GraphRAG, knowledge graphs, évaluation de modèles (Gemini, GPT, Llama, Claude).</li>
+                        <li>POCs et études de cas</li>
+                        <li>Veille technologique</li>
+                        <li>Formation interne</li>
+                        <li>Réponses à appels d'offre</li>
+                        <li>Rédaction d'articles et présentation de meetups et conférences</li>
+                    </ul>
+                    <p style="margin-top: 0.5em; margin-bottom: 0.25em;">Intelligence artificielle :</p>
+                    <ul>
+                        <li>Étude RAG pour synthétiser les erreurs de traitement d'un système métier</li>
+                        <li>POC GraphRAG : construction d'un graphe de connaissances pour améliorer la précision des recherches dans un cas d'usage juridique</li>
+                        <li>Benchmark de modèles (Gemini, GPT, Llama, DeepSeek, Claude, Qwen, etc.)</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Blockchain : React, JS/TS, Ethereum (Solidity), Tezos (Ligo). 
-                        IA : Python, Jupyter, Ollama, Neo4J, Vector Search
+                        Environnement technique : Blockchain : React, JavaScript, TypeScript, 
+                        Smart contracts, consensus, gouvernance, Ethereum (Solidity, Truffle, Remix, Web3.js), 
+                        Tezos (Ligo, Taquito). IA : Python, Jupyter, Ollama, OpenWebUI, Knowledge Graph, 
+                        Vectorisation et embeddings, Atlas Vector Search, PGVector, Neo4J.
                     </p>
                 </article>
                 
@@ -769,14 +922,20 @@
                         <div>
                             <div class="experience-title">Tech Lead</div>
                             <div class="experience-company">Ineat Group pour Norauto</div>
-                        </div>
-                        <div class="experience-dates">Juil 2021 - Juil 2022</div>
-                    </div>
+                            </div>
+                        <div class="experience-dates"><time datetime="2021-07">Juil. 2021</time> - <time datetime="2022-07">Juil. 2022</time></div>
+                            </div>
+                    <div class="experience-description">
+                        Tech Lead - équipe Concept Store (Norauto) : conception, industrialisation et livraison de nouveaux concepts magasin (POC → produit).
+                            </div>
                     <ul>
-                        <li>Tech lead équipe Concept Store. Mise en place de POCs et leur industrialisation pour nouveaux concepts magasin.</li>
+                        <li>Conception d'architecture et choix techniques</li>
+                        <li>Développement d'API et accompagnement des développements</li>
+                        <li>Pilotage de livraison et coordination avec les partenaires externes</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Java, Spring Boot, MongoDB, PostgreSQL, Azure
+                        Environnement technique : Java, Spring Boot, MongoDB, PostgreSQL, 
+                        Azure, Gitlab, Gitlab CI.
                     </p>
                 </article>
                 
@@ -786,14 +945,20 @@
                             <div class="experience-title">Scrum Master</div>
                             <div class="experience-company">Ineat Group pour Leroy Merlin</div>
                         </div>
-                        <div class="experience-dates">Avr 2019 - Juil 2021</div>
+                        <div class="experience-dates"><time datetime="2019-04">Avr. 2019</time> - <time datetime="2021-07">Juil. 2021</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Scrum Master d'une équipe de 5 personnes - périmètre promesse de livraison pour la marketplace Leroymerlin.fr.
                     </div>
                     <ul>
-                        <li>Animation d'une équipe de 5 personnes responsable de la promesse de livraison pour la marketplace Leroymerlin.fr. 
-                        Animation agile, développement slackbot, synchronisation entre équipes, participation aux conceptions et architectures.</li>
+                        <li>Facilitation agile (cadence, impediments, transparence)</li>
+                        <li>Développement de bots Slack pour automatiser des flux métier</li>
+                        <li>Synchronisation entre équipes</li>
+                        <li>Participation aux conceptions et architectures</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Java, Spring Boot, MongoDB, Kafka, Docker, Kubernetes, GCP
+                        Environnement technique : Java, Spring Boot, MongoDB, Kafka, Docker, 
+                        Kubernetes, GCP, Github, Github Actions.
                     </p>
                 </article>
                 
@@ -803,11 +968,11 @@
                             <div class="experience-title">Scrum Master</div>
                             <div class="experience-company">Ineat Group pour Adeo</div>
                         </div>
-                        <div class="experience-dates">Oct 2018 - Avr 2019</div>
+                        <div class="experience-dates"><time datetime="2018-10">Oct. 2018</time> - <time datetime="2019-04">Avr. 2019</time></div>
                     </div>
-                    <ul>
-                        <li>Intervention dans 4 équipes pour les initier aux bases de l'agilité et les accompagner dans leur évolution avec Scrum ou Kanban.</li>
-                    </ul>
+                    <div class="experience-description">
+                        Coaching agile pour 4 équipes Adeo : initiation Scrum / Kanban et stabilisation des pratiques.
+                    </div>
                 </article>
                 
                 <article>
@@ -816,14 +981,19 @@
                             <div class="experience-title">Concepteur projet Java & Scrum Master</div>
                             <div class="experience-company">Ineat Group pour Oney Bank</div>
                         </div>
-                        <div class="experience-dates">Jan 2016 - Oct 2018</div>
+                        <div class="experience-dates"><time datetime="2016-01">Janv. 2016</time> - <time datetime="2018-10">Oct. 2018</time></div>
+                    </div>
+                    <div class="experience-description">
+                        DSI - projets paiement et sécurité : tokenisation et paiement mobile, authentification forte client, exposition de services métiers en API.
                     </div>
                     <ul>
-                        <li>DSI projets : intégration tokenisation/paiement mobile, authentification forte client, exposition API métiers. 
-                        Mise en place Scrum, études préalables, conceptions techniques/fonctionnelles, architectures, POCs.</li>
+                        <li>Mise en place de Scrum et animation de l'équipe</li>
+                        <li>Études préalables, conceptions technique et fonctionnelle, POC</li>
+                        <li>Contribution aux arbitrages d'architecture</li>
+                        <li>Appui technique sur les sujets réglementaires et juridiques liés aux flux paiement</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Java, Spring Boot
+                        Environnement technique : Java, Spring Boot.
                     </p>
                 </article>
                 
@@ -833,14 +1003,19 @@
                             <div class="experience-title">Chef de projet technique applications mobiles</div>
                             <div class="experience-company">Ineat Group pour Leroy Merlin</div>
                         </div>
-                        <div class="experience-dates">Jan 2015 - Déc 2016</div>
+                        <div class="experience-dates"><time datetime="2015-01">Janv. 2015</time> - <time datetime="2016-12">Déc. 2016</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Pôle mobilité puis apps grand public Leroy Merlin : prototype vente terrain, puis pilotage de la refonte des applications iOS et Android.
                     </div>
                     <ul>
-                        <li>Pôle mobilité : coordination prototype application vente mobilité. Équipe apps mobiles grand public : refonte complète iOS/Android. 
-                        Conceptions techniques, ateliers utilisateurs (Lean Startup), coordination équipes, management proximité (6-10 personnes).</li>
+                        <li>Management de proximité de 6 à 10 personnes (dont offshore)</li>
+                        <li>Cadrage technique, conception et coordination avec les feature teams</li>
+                        <li>Ateliers utilisateurs et expérimentation (Lean Startup)</li>
+                        <li>Suivi planning, livrables et budget ; gestion fournisseurs</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Android, iOS, Java
+                        Environnement technique : Android, iOS, Java.
                     </p>
                 </article>
                 
@@ -850,14 +1025,18 @@
                             <div class="experience-title">Chef de projet technique & développeur Java</div>
                             <div class="experience-company">Ineat Group pour Humanis</div>
                         </div>
-                        <div class="experience-dates">Juin 2012 - Déc 2014</div>
+                        <div class="experience-dates"><time datetime="2012-06">Juin 2012</time> - <time datetime="2014-12">Déc. 2014</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Application de planification des instances pour le groupe Humanis - pilotage projet et développement Java.
                     </div>
                     <ul>
-                        <li>Application planification instances groupe. Gestion équipe 2 personnes, planification projet (Planisware), suivi budget, 
-                        coordination acteurs, relations MOA, conceptions et développements Java.</li>
+                        <li>Management d'une petite équipe ; pilotage Planisware et suivi budget</li>
+                        <li>Coordination MOA / MOE et parties prenantes métier</li>
+                        <li>Conceptions et développements Java</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL
+                        Environnement technique : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Tomcat.
                     </p>
                 </article>
                 
@@ -867,10 +1046,13 @@
                             <div class="experience-title">Ingénieur d'études et développement Java</div>
                             <div class="experience-company">Sopra Group</div>
                         </div>
-                        <div class="experience-dates">2008 - 2012</div>
+                        <div class="experience-dates"><time datetime="2008">2008</time> - <time datetime="2012">2012</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Projets SI pour clients du secteur public et privé : développement Java/JEE et maintenance évolutive.
                     </div>
                     <p class="technologies">
-                        Tech : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat
+                        Environnement technique : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat.
                     </p>
                 </article>
             </section>
@@ -884,7 +1066,7 @@
                             <div class="teaching-title">Formation Blockchain - Encadrement de TP</div>
                         </div>
                     </div>
-                    <div style="font-size: 8.5pt; color: var(--color-text-muted); margin-top: 0.2em;">
+                    <div style="font-size: 9pt; color: var(--color-text-muted); margin-top: 0.25em;">
                         <div>Supinfo Lille - 2021</div>
                     </div>
                 </div>
@@ -897,16 +1079,29 @@
                     <div class="experience-header">
                         <div>
                             <div class="experience-title">Instampy.fr</div>
-                            <div class="experience-company">SaaS B2C horodatage - Blue Mossa</div>
+                            <div class="experience-company">SaaS d'horodatage numérique B2C - EURL Blue Mossa</div>
                         </div>
-                        <div class="experience-dates">Sept 2025 - Présent</div>
+                        <div class="experience-dates"><time datetime="2025-09">Sept. 2025</time> - présent</div>
                     </div>
+                    <div class="experience-description">
+                        Fondateur &amp; architecte - <a href="https://www.instampy.fr/">Instampy.fr</a> : SaaS B2C d'horodatage numérique et preuve d'antériorité. Produit livré de bout en bout (architecture à la mise en production).
+                    </div>
+                    <p style="margin-top: 0.5em; margin-bottom: 0.25em;">Conception & architecture</p>
                     <ul>
-                        <li>Fondateur & architecte, projet solo bout-en-bout. Architecture full-stack cloud-agnostic anti lock-in ; blockchain modulaire multi-chain (Sui, Avalanche), Move/Solidity, gas fees compartimentés. 
-                        Nuxt SSR, API REST, PostgreSQL/Prisma, Stripe, RGPD FR/EN. Railway multi-env, GitHub Actions, monitoring, DNS/DMARC/DKIM. <a href="https://www.instampy.fr/">https://www.instampy.fr/</a></li>
+                        <li>Architecture cloud-agnostic full-stack avec séparation claire des responsabilités, couches d'abstraction anti-vendor lock-in sur l'ensemble des services tiers.</li>
+                        <li>Conception d'une architecture blockchain modulaire et multi-chain (Sui + Avalanche, extensible), smart contracts custom (Move + Solidity), sécurisation des gas fees avec compartimentation des risques.</li>
+                    </ul>
+                    <p style="margin-top: 0.5em; margin-bottom: 0.25em;">Développement</p>
+                    <ul>
+                        <li>Frontend SSR, API REST, base relationnelle.</li>
+                        <li>Interface multilingue FR/EN, paiement en ligne, conformité RGPD complète.</li>
+                    </ul>
+                    <p style="margin-top: 0.5em; margin-bottom: 0.25em;">Ops</p>
+                    <ul>
+                        <li>Déploiement multi-environnements sur Railway, CI/CD GitHub Actions, monitoring uptime, gestion DNS, configuration DMARC/DKIM.</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Nuxt 4, Vue 3, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Railway, Sui, Avalanche, Stripe
+                        Environnement technique : Nuxt 4, Vue 3, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Railway, Sui, Avalanche, Move, Solidity, Stripe
                     </p>
                 </article>
                 
@@ -916,14 +1111,19 @@
                             <div class="experience-title">Résolution de la Machoire de Caïn</div>
                             <div class="experience-company"></div>
                         </div>
-                        <div class="experience-dates">Depuis début 2025</div>
+                        <div class="experience-dates"><time datetime="2025-01">Depuis janv. 2025</time></div>
+                    </div>
+                    <div class="experience-description">
+                        Développement d'un outil basé sur l'IA pour faciliter la résolution de la <em>Mâchoire de Caïn</em>, un problème littéraire complexe.
                     </div>
                     <ul>
-                        <li>Outil basé sur l'IA pour résoudre la <em>Mâchoire de Caïn</em>, problème littéraire complexe. 
-                        Définition entités/relations textes FR/EN, prompts extraction données, bases vectorielles, knowledge graph pour améliorer recherche vectorielle.</li>
+                        <li>Définition des entités et relations des textes français et anglais de l'oeuvre</li>
+                        <li>Rédaction de prompts pour extraction de données et leur structuration</li>
+                        <li>Utilisation de bases de données vectorielles pour le stockage et la recherche</li>
+                        <li>Création d'un knowledge graph pour améliorer la pertinence de la recherche vectorielle</li>
                     </ul>
                     <p class="technologies">
-                        Tech : Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph
+                        Environnement technique : Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols.
                     </p>
                 </article>
                 
@@ -935,11 +1135,15 @@
                         </div>
                         <div class="experience-dates">2023</div>
                     </div>
+                    <div class="experience-description">
+                        Développement d'un outil en ligne pour faciliter les votes des bakers Tezos pour les propositions de gouvernance.
+                    </div>
                     <ul>
-                        <li>Développement d'un outil en ligne pour faciliter les votes des bakers Tezos pour les propositions de gouvernance. Développement en collaboration avec la société MIDL.dev. <a href="https://tezocracy.xyz/">https://tezocracy.xyz</a></li>
+                        <li>Développement en collaboration avec la société MIDL.dev</li>
+                        <li><a href="https://tezocracy.xyz/">https://tezocracy.xyz</a></li>
                     </ul>
                     <p class="technologies">
-                        Tech : React, Taquito, Tezos, Github Action, Netlify
+                        Environnement technique : React, Taquito, Tezos, GitHub Actions, Netlify
                     </p>
                 </article>
                 
@@ -951,11 +1155,16 @@
                         </div>
                         <div class="experience-dates">Début 2022</div>
                     </div>
+                    <div class="experience-description">
+                        Développement d'un Faucet pour les testnet Tezos, permettant de distribuer des tokens Tez à des adresses Tezos.
+                    </div>
                     <ul>
-                        <li>Développement personnel dans un premier temps. Obtention d'un financement de la fondation Tezos pour le faire évoluer et l'intégrer comme faucet officiel. Passation à OxheadAlpha et maintenance, avant son transfert à la fondation.</li>
+                        <li>Développement personnel dans un premier temps</li>
+                        <li>Obtention d'un financement de la fondation Tezos pour le faire évoluer et l'intégrer comme faucet officiel</li>
+                        <li>Passation à OxheadAlpha et maintenance, avant son transfert à la fondation</li>
                     </ul>
                     <p class="technologies">
-                        Tech : React, Taquito, Tezos, Github Actions, Netlify
+                        Environnement technique : React, Taquito, Tezos, Github Actions, Netlify
                     </p>
                 </article>
             </section>
