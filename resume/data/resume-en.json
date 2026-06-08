@@ -1,0 +1,319 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexandre Vanryssel",
+    "label": "Tech Lead Freelance, Java & Web3",
+    "email": "avanryssel@gmail.com",
+    "url": "https://avysel.github.io",
+    "summary": "Experienced Tech Lead with over 15 years of experience in software development, specialized in Java and Spring Boot technologies. Expertise also covers blockchain (Ethereum, Tezos, Avalanche, Sui) and artificial intelligence. Technical leadership positions leading teams, designing robust and scalable architectures, and implementing good practices in quality, security, observability, and operations. DevOps and Cloud experience (Docker, Kubernetes, GCP, Azure). PSM I certified.",
+    "location": {
+      "city": "Lille",
+      "countryCode": "FR",
+      "region": "Hauts-de-France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alexandre-vanryssel-89a148b",
+        "url": "https://www.linkedin.com/in/alexandre-vanryssel-89a148b/"
+      },
+      {
+        "network": "GitHub",
+        "username": "avysel",
+        "url": "https://github.com/avysel"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Adeo",
+      "position": "Tech Lead",
+      "startDate": "2023-01",
+      "summary": "Tech lead in a team of 10 people working on several products around costing. Astek (until February 2025), then Freelance.",
+      "highlights": [
+        "Architecture and technical design",
+        "Animation within the team of cross-cutting policies (quality, security, architecture, observability, operations)",
+        "Recruitment and onboarding",
+        "Development, CI/CD and Ops",
+        "Technical Environment: Java, Spring, Spring Boot, MongoDB, Mongo Atlas, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP, Github, Github Actions, Github Copilot, Postman, Bruno, Gatling, Datadog"
+      ]
+    },
+    {
+      "name": "Marigold",
+      "position": "Engineering Manager",
+      "startDate": "2022-10",
+      "endDate": "2022-12",
+      "summary": "Engineering manager in the Tezos blockchain ecosystem. Manager of the team responsible for developing Ligo, Tezos' smart contract language.",
+      "highlights": [
+        "Management of a team of 12 people distributed worldwide",
+        "Language evolution",
+        "Deployment of a library registry"
+      ]
+    },
+    {
+      "name": "Ineat Lab (Ineat Group), then Innovation Lab (Astek)",
+      "position": "Innovation Cell / Blockchain & AI Referent",
+      "startDate": "2018",
+      "endDate": "2025",
+      "summary": "Within Ineat's (then Astek's) Innovation cell, technological watch on blockchain and AI.",
+      "highlights": [
+        "Blockchain: POCs and case studies, technological watch, internal training, response to calls for tenders, articles and meetups/conferences",
+        "AI: RAG study synthesizing processing errors of a business system",
+        "GraphRAG POC: knowledge graph to improve RAG search accuracy in the legal domain",
+        "Study of different models (Gemini, GPT, Llama, DeepSeek, Claude, Qwen)",
+        "Technical Environment: React, Javascript, Typescript, smart contracts, Ethereum (Solidity, Truffle, Remix, Web3.js), Tezos (Ligo, Taquito), Python, Jupyter, Ollama, OpenWebUI, Knowledge Graph, vectorization and embeddings, Atlas Vector Search, PGVector, Neo4J"
+      ]
+    },
+    {
+      "name": "Norauto (via Ineat Group)",
+      "position": "Tech Lead",
+      "startDate": "2021-07",
+      "endDate": "2022-07",
+      "summary": "Tech lead in the Concept Store team. Implementation of proof of concepts and their industrialization for new store concepts.",
+      "highlights": [
+        "Design and architecture",
+        "API development",
+        "Development management and monitoring",
+        "Relations with external partners",
+        "Technical Environment: Java, Spring Boot, MongoDB, PostgreSQL, Azure, Gitlab, Gitlab CI"
+      ]
+    },
+    {
+      "name": "Leroy Merlin (via Ineat Group)",
+      "position": "Scrum Master",
+      "startDate": "2019-04",
+      "endDate": "2021-07",
+      "summary": "Facilitation of a team of 5 people responsible for delivery promise for the Leroymerlin.fr marketplace.",
+      "highlights": [
+        "Agile facilitation of the team",
+        "Slackbot development",
+        "Synchronization between teams",
+        "Participation in designs and architectures",
+        "Technical Environment: Java, Spring Boot, MongoDB, Kafka, Docker, Kubernetes, GCP, Github, Github Actions"
+      ]
+    },
+    {
+      "name": "Adeo (via Ineat Group)",
+      "position": "Scrum Master",
+      "startDate": "2018-10",
+      "endDate": "2019-04",
+      "summary": "Intervention in 4 teams to introduce them to the basics of agility and support them in their evolution with Scrum or Kanban."
+    },
+    {
+      "name": "Oney Bank (via Ineat Group)",
+      "position": "Java Project Designer & Scrum Master",
+      "startDate": "2016-01",
+      "endDate": "2018-10",
+      "summary": "In the IT department's project division: tokenization and mobile payment service, strong customer authentication, and exposure of business services as APIs.",
+      "highlights": [
+        "Implement Scrum and support the team",
+        "Provide technical assistance on legal aspects",
+        "Conduct preliminary studies",
+        "Perform technical and functional designs",
+        "Participate in architecture implementation",
+        "Develop Proofs of Concept",
+        "Technical Environment: Java, Spring Boot"
+      ]
+    },
+    {
+      "name": "Leroy Merlin (via Ineat Group)",
+      "position": "Technical Project Manager - Mobile Applications",
+      "startDate": "2015-01",
+      "endDate": "2016-12",
+      "summary": "Mobility division: mobile sales application prototype. Then consumer mobile applications team: oversee the complete redesign of iOS and Android applications.",
+      "highlights": [
+        "Write technical designs",
+        "Follow user workshops and implement ideas (Lean Startup)",
+        "Coordinate exchanges between the team and feature teams",
+        "Organize and monitor development",
+        "Monitor budget",
+        "Proximity management of the team (6 to 10 people)",
+        "Manage technical and contractual relationships with solution providers",
+        "Technical Environment: Android, iOS, Java"
+      ]
+    },
+    {
+      "name": "Humanis (via Ineat Group)",
+      "position": "Technical Project Manager & Java Developer",
+      "startDate": "2012-06",
+      "endDate": "2014-12",
+      "summary": "Group instance planning application.",
+      "highlights": [
+        "Manage a team of 2 people",
+        "Project planning (Planisware tool)",
+        "Monitor budget",
+        "Coordinate different stakeholders",
+        "Manage MOA relationships",
+        "Perform designs and development (Java)",
+        "Technical Environment: Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Tomcat"
+      ]
+    },
+    {
+      "name": "Sopra Group",
+      "position": "Java Study and Development Engineer",
+      "startDate": "2008",
+      "endDate": "2012",
+      "highlights": [
+        "Technical Environment: Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat"
+      ]
+    },
+    {
+      "name": "Supinfo Lille",
+      "position": "Blockchain Training - Lab Supervision",
+      "startDate": "2021",
+      "endDate": "2021",
+      "summary": "Teaching: supervision of blockchain practical labs."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Polytech'Lille",
+      "area": "Computer Science and Statistics",
+      "studyType": "Engineering Degree",
+      "startDate": "2005",
+      "endDate": "2008"
+    },
+    {
+      "institution": "IUT de Lens",
+      "area": "Computer Science",
+      "studyType": "DUT",
+      "startDate": "2003",
+      "endDate": "2005"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "url": "https://www.scrum.org/user/594885"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Java", "Javascript", "Typescript", "HTML", "CSS", "Python", "Solidity", "Ligo"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "keywords": ["Spring Boot", "Spring", "React", "Angular", "Vue.js", "Kafka", "Redis"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["MongoDB", "PostgreSQL", "Neo4J", "Oracle"]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "keywords": ["Docker", "Kubernetes", "GCP", "Azure", "Gitlab", "Gitlab CI", "Github", "Github Actions"]
+    },
+    {
+      "name": "Blockchain",
+      "keywords": [
+        "Ethereum",
+        "Avalanche",
+        "Solidity",
+        "Truffle",
+        "Remix",
+        "Web3.js",
+        "Tezos",
+        "Ligo",
+        "Taquito",
+        "Sui",
+        "Move",
+        "Smart contracts",
+        "consensus",
+        "governance",
+        "DAG"
+      ]
+    },
+    {
+      "name": "AI",
+      "keywords": [
+        "Python",
+        "Jupyter",
+        "Ollama",
+        "OpenWebUI",
+        "Knowledge Graph",
+        "Vectorization",
+        "embeddings",
+        "Atlas Vector Search",
+        "PGVector",
+        "Neo4J",
+        "Prompt engineering",
+        "MCP",
+        "Github Copilot",
+        "Cursor"
+      ]
+    },
+    {
+      "name": "Testing & Monitoring Tools",
+      "keywords": ["Postman", "Bruno", "Gatling", "Datadog"]
+    },
+    {
+      "name": "Leadership & Methods",
+      "keywords": ["Scrum Master", "Engineering Manager", "Agile", "Kanban", "PSM I", "Recruitment"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Chinese (Mandarin)",
+      "fluency": "Basic"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Instampy.fr",
+      "url": "https://www.instampy.fr/",
+      "startDate": "2025-09",
+      "description": "Founder & architect. B2C digital timestamping SaaS (EURL Blue Mossa). Solo project end-to-end, from architectural decisions through production release.",
+      "highlights": [
+        "Cloud-agnostic full-stack architecture with clear separation of concerns and abstraction layers to limit vendor lock-in",
+        "Modular multi-chain blockchain design (Sui + Avalanche, extensible), custom smart contracts (Move + Solidity), gas fee risk containment",
+        "SSR frontend, REST API, relational database, FR/EN multilingual UI, online payments, full GDPR compliance",
+        "Multi-environment deployment on Railway, GitHub Actions CI/CD, uptime monitoring, DNS, DMARC/DKIM",
+        "Nuxt 4, Vue 3, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Railway, Sui, Avalanche, Move, Solidity, Stripe, Cursor"
+      ]
+    },
+    {
+      "name": "Solving Cain's Jawbone",
+      "startDate": "2025-01",
+      "description": "AI-based tool to facilitate the resolution of Cain's Jawbone, a complex literary problem.",
+      "highlights": [
+        "Definition of entities and relationships in French and English texts of the work",
+        "Writing prompts for data extraction and structuring",
+        "Use of vector databases for storage and search",
+        "Creation of a knowledge graph to improve the relevance of vector search",
+        "Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Knowledge Graph, Cursor, Model Context Protocols"
+      ]
+    },
+    {
+      "name": "Tezocracy",
+      "url": "https://tezocracy.xyz/",
+      "startDate": "2023",
+      "endDate": "2023",
+      "description": "Online tool to facilitate Tezos bakers' votes for governance proposals.",
+      "highlights": [
+        "Development in collaboration with MIDL.dev",
+        "React, Taquito, Tezos, Github Action, Netlify"
+      ]
+    },
+    {
+      "name": "Tezos Testnet Faucet",
+      "startDate": "2022-01",
+      "description": "Faucet for Tezos testnets, allowing distribution of Tez tokens to Tezos addresses.",
+      "highlights": [
+        "Personal development initially",
+        "Obtained funding from the Tezos Foundation to evolve it and integrate it as an official faucet",
+        "Handover to OxheadAlpha and maintenance, before transfer to the foundation",
+        "React, Taquito, Tezos, Github Actions, Netlify"
+      ]
+    }
+  ]
+}

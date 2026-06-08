@@ -1,0 +1,315 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexandre Vanryssel",
+    "label": "Tech Lead Freelance, Java & Web3",
+    "email": "avanryssel@gmail.com",
+    "url": "https://avysel.github.io",
+    "summary": "Tech Lead avec plus de 15 ans d'expérience, spécialisé en Java et Spring Boot, architectures distribuées et produits critiques chez des grands comptes (retail, finance). Pilotage d'équipes techniques jusqu'à environ 12 personnes, recrutement, définition d'architecture et accompagnement livraison (qualité, sécurité, observabilité, exploitation). Expertise complémentaire en DevOps et cloud (Docker, Kubernetes, GCP, Azure, CI/CD), en blockchain (Ethereum, Tezos, Avalanche, Sui, smart contracts) et en IA appliquée (RAG, graphes de connaissances, évaluation de modèles). Certifié Scrum PSM I.",
+    "location": {
+      "city": "Lille",
+      "countryCode": "FR",
+      "region": "Hauts-de-France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alexandre-vanryssel-89a148b",
+        "url": "https://www.linkedin.com/in/alexandre-vanryssel-89a148b/"
+      },
+      {
+        "network": "GitHub",
+        "username": "avysel",
+        "url": "https://github.com/avysel"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Adeo",
+      "position": "Tech Lead",
+      "startDate": "2023-01",
+      "summary": "Pilotage technique d'une équipe d'environ 10 personnes sur plusieurs produits logiciels du périmètre costing (retail). Adeo - Astek (jusqu'à févr. 2025), puis freelance.",
+      "highlights": [
+        "Architecture et conception ; développement ; chaînes CI/CD et exploitation",
+        "Déploiement des politiques transverses : qualité, sécurité, observabilité et fiabilité en production",
+        "Animation technique et alignement avec les parties prenantes métier et transverses",
+        "Recrutement et intégration des nouveaux membres",
+        "Environnement technique : Java, Spring, Spring Boot, MongoDB, Mongo Atlas, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP, Github, Github Actions, Github Copilot, Postman, Bruno, Gatling, Datadog"
+      ]
+    },
+    {
+      "name": "Marigold",
+      "position": "Engineering Manager",
+      "startDate": "2022-10",
+      "endDate": "2022-12",
+      "summary": "Management de l'équipe responsable de Ligo, langage de smart contracts officiel de la blockchain Tezos.",
+      "highlights": [
+        "Management d'une équipe de 12 personnes répartie à l'international",
+        "Priorisation et cadence des évolutions du langage et de l'outil",
+        "Mise en place d'un registry de bibliothèques pour l'écosystème développeur"
+      ]
+    },
+    {
+      "name": "Ineat Lab (Ineat Group), puis Innovation Lab (Astek)",
+      "position": "Cellule Innovation / Référent blockchain / IA",
+      "startDate": "2018",
+      "endDate": "2025",
+      "summary": "Référent blockchain et IA : veille, prototypes, formations et soutien aux réponses appels d'offres.",
+      "highlights": [
+        "Blockchain : POCs et études de cas, veille technologique, formation interne, réponses à appels d'offre, articles et meetups/conférences",
+        "IA : étude RAG pour synthétiser les erreurs de traitement d'un système métier",
+        "POC GraphRAG : graphe de connaissances pour améliorer la précision des recherches dans un cas d'usage juridique",
+        "Benchmark de modèles (Gemini, GPT, Llama, DeepSeek, Claude, Qwen, etc.)",
+        "Environnement technique : React, JavaScript, TypeScript, smart contracts, Ethereum (Solidity, Truffle, Remix, Web3.js), Tezos (Ligo, Taquito), Python, Jupyter, Ollama, OpenWebUI, Knowledge Graph, vectorisation et embeddings, Atlas Vector Search, PGVector, Neo4J"
+      ]
+    },
+    {
+      "name": "Norauto (via Ineat Group)",
+      "position": "Tech Lead",
+      "startDate": "2021-07",
+      "endDate": "2022-07",
+      "summary": "Tech Lead - équipe Concept Store (Norauto) : conception, industrialisation et livraison de nouveaux concepts magasin (POC → produit).",
+      "highlights": [
+        "Conception d'architecture et choix techniques",
+        "Développement d'API et accompagnement des développements",
+        "Pilotage de livraison et coordination avec les partenaires externes",
+        "Environnement technique : Java, Spring Boot, MongoDB, PostgreSQL, Azure, Gitlab, Gitlab CI"
+      ]
+    },
+    {
+      "name": "Leroy Merlin (via Ineat Group)",
+      "position": "Scrum Master",
+      "startDate": "2019-04",
+      "endDate": "2021-07",
+      "summary": "Scrum Master d'une équipe de 5 personnes - périmètre promesse de livraison pour la marketplace Leroymerlin.fr.",
+      "highlights": [
+        "Facilitation agile (cadence, impediments, transparence)",
+        "Développement de bots Slack pour automatiser des flux métier",
+        "Synchronisation entre équipes",
+        "Participation aux conceptions et architectures",
+        "Environnement technique : Java, Spring Boot, MongoDB, Kafka, Docker, Kubernetes, GCP, Github, Github Actions"
+      ]
+    },
+    {
+      "name": "Adeo (via Ineat Group)",
+      "position": "Scrum Master",
+      "startDate": "2018-10",
+      "endDate": "2019-04",
+      "summary": "Coaching agile pour 4 équipes Adeo : initiation Scrum / Kanban et stabilisation des pratiques."
+    },
+    {
+      "name": "Oney Bank (via Ineat Group)",
+      "position": "Concepteur projet Java & Scrum Master",
+      "startDate": "2016-01",
+      "endDate": "2018-10",
+      "summary": "DSI - projets paiement et sécurité : tokenisation et paiement mobile, authentification forte client, exposition de services métiers en API.",
+      "highlights": [
+        "Mise en place de Scrum et animation de l'équipe",
+        "Études préalables, conceptions technique et fonctionnelle, POC",
+        "Contribution aux arbitrages d'architecture",
+        "Appui technique sur les sujets réglementaires et juridiques liés aux flux paiement",
+        "Environnement technique : Java, Spring Boot"
+      ]
+    },
+    {
+      "name": "Leroy Merlin (via Ineat Group)",
+      "position": "Chef de projet technique applications mobiles",
+      "startDate": "2015-01",
+      "endDate": "2016-12",
+      "summary": "Pôle mobilité puis apps grand public Leroy Merlin : prototype vente terrain, puis pilotage de la refonte des applications iOS et Android.",
+      "highlights": [
+        "Management de proximité de 6 à 10 personnes (dont offshore)",
+        "Cadrage technique, conception et coordination avec les feature teams",
+        "Ateliers utilisateurs et expérimentation (Lean Startup)",
+        "Suivi planning, livrables et budget ; gestion fournisseurs",
+        "Environnement technique : Android, iOS, Java"
+      ]
+    },
+    {
+      "name": "Humanis (via Ineat Group)",
+      "position": "Chef de projet technique & développeur Java",
+      "startDate": "2012-06",
+      "endDate": "2014-12",
+      "summary": "Application de planification des instances pour le groupe Humanis - pilotage projet et développement Java.",
+      "highlights": [
+        "Management d'une petite équipe ; pilotage Planisware et suivi budget",
+        "Coordination MOA / MOE et parties prenantes métier",
+        "Conceptions et développements Java",
+        "Environnement technique : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Tomcat"
+      ]
+    },
+    {
+      "name": "Sopra Group",
+      "position": "Ingénieur d'études et développement Java",
+      "startDate": "2008",
+      "endDate": "2012",
+      "summary": "Projets SI pour clients du secteur public et privé : développement Java/JEE et maintenance évolutive.",
+      "highlights": [
+        "Environnement technique : Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat"
+      ]
+    },
+    {
+      "name": "Supinfo Lille",
+      "position": "Formation Blockchain - Encadrement de TP",
+      "startDate": "2021",
+      "endDate": "2021",
+      "summary": "Enseignement : encadrement de travaux pratiques sur la blockchain."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Polytech'Lille",
+      "area": "Informatique et Statistique",
+      "studyType": "Ingénieur",
+      "startDate": "2005",
+      "endDate": "2008"
+    },
+    {
+      "institution": "IUT de Lens",
+      "area": "Informatique",
+      "studyType": "DUT",
+      "startDate": "2003",
+      "endDate": "2005"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "url": "https://www.scrum.org/user/594885"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Langages",
+      "keywords": ["Java", "JavaScript", "TypeScript", "Python", "Solidity", "Ligo"]
+    },
+    {
+      "name": "Front-end & Web",
+      "keywords": ["HTML", "CSS", "React", "Angular", "Vue.js"]
+    },
+    {
+      "name": "Back-end Java",
+      "keywords": ["Spring Boot", "Spring Framework"]
+    },
+    {
+      "name": "Bases de données, cache & messaging",
+      "keywords": ["MongoDB", "PostgreSQL", "Neo4j", "Oracle", "Redis", "Apache Kafka"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": ["Docker", "Kubernetes", "GCP", "Azure", "GitLab", "GitLab CI/CD", "GitHub", "GitHub Actions"]
+    },
+    {
+      "name": "Blockchain",
+      "keywords": [
+        "Ethereum",
+        "Avalanche",
+        "Solidity",
+        "Truffle",
+        "Remix",
+        "Web3.js",
+        "Tezos",
+        "Ligo",
+        "Taquito",
+        "Sui",
+        "Move",
+        "smart contracts",
+        "consensus",
+        "gouvernance",
+        "DAG"
+      ]
+    },
+    {
+      "name": "IA",
+      "keywords": [
+        "Jupyter",
+        "Ollama",
+        "OpenWebUI",
+        "RAG",
+        "knowledge graph",
+        "vectorisation",
+        "embeddings",
+        "MongoDB Atlas Vector Search",
+        "PGVector",
+        "Neo4j",
+        "prompt engineering",
+        "MCP",
+        "GitHub Copilot",
+        "Cursor"
+      ]
+    },
+    {
+      "name": "Tests & observabilité",
+      "keywords": ["Postman", "Bruno", "Gatling", "Datadog"]
+    },
+    {
+      "name": "Leadership & Méthodes",
+      "keywords": ["Scrum Master", "Engineering Manager", "Agile", "Kanban", "PSM I", "Recrutement"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Langue maternelle"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Courant"
+    },
+    {
+      "language": "Chinois (Mandarin)",
+      "fluency": "Notions"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Instampy.fr",
+      "url": "https://www.instampy.fr/",
+      "startDate": "2025-09",
+      "description": "Fondateur & architecte - SaaS B2C d'horodatage numérique et preuve d'antériorité (EURL Blue Mossa). Produit livré de bout en bout (architecture à la mise en production).",
+      "highlights": [
+        "Architecture cloud-agnostic full-stack avec séparation claire des responsabilités, couches d'abstraction anti-vendor lock-in",
+        "Architecture blockchain modulaire et multi-chain (Sui + Avalanche, extensible), smart contracts custom (Move + Solidity), sécurisation des gas fees",
+        "Frontend SSR, API REST, base relationnelle, interface multilingue FR/EN, paiement en ligne, conformité RGPD",
+        "Déploiement multi-environnements sur Railway, CI/CD GitHub Actions, monitoring uptime, DNS, DMARC/DKIM",
+        "Nuxt 4, Vue 3, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Railway, Sui, Avalanche, Move, Solidity, Stripe"
+      ]
+    },
+    {
+      "name": "Résolution de la Mâchoire de Caïn",
+      "startDate": "2025-01",
+      "description": "Développement d'un outil basé sur l'IA pour faciliter la résolution de la Mâchoire de Caïn, un problème littéraire complexe.",
+      "highlights": [
+        "Définition des entités et relations des textes français et anglais de l'œuvre",
+        "Rédaction de prompts pour extraction de données et leur structuration",
+        "Utilisation de bases de données vectorielles pour le stockage et la recherche",
+        "Création d'un knowledge graph pour améliorer la pertinence de la recherche vectorielle",
+        "Python, Jupyter, Ollama, OpenWebUI, Neo4J, RAG, GraphRAG, Cursor, Model Context Protocols"
+      ]
+    },
+    {
+      "name": "Tezocracy",
+      "url": "https://tezocracy.xyz/",
+      "startDate": "2023",
+      "endDate": "2023",
+      "description": "Outil en ligne pour faciliter les votes des bakers Tezos pour les propositions de gouvernance.",
+      "highlights": [
+        "Développement en collaboration avec la société MIDL.dev",
+        "React, Taquito, Tezos, GitHub Actions, Netlify"
+      ]
+    },
+    {
+      "name": "Faucet pour les testnet Tezos",
+      "startDate": "2022-01",
+      "description": "Faucet pour les testnet Tezos, permettant de distribuer des tokens Tez à des adresses Tezos.",
+      "highlights": [
+        "Développement personnel dans un premier temps",
+        "Financement de la fondation Tezos pour l'intégrer comme faucet officiel",
+        "Passation à OxheadAlpha et maintenance, avant transfert à la fondation",
+        "React, Taquito, Tezos, GitHub Actions, Netlify"
+      ]
+    }
+  ]
+}
