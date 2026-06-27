@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Alexandre Vanryssel",
-    "label": "Tech Lead Freelance, Java & Web3",
+    "label": "Freelance Tech Lead, Java, JS & Web3",
     "email": "avanryssel@gmail.com",
     "url": "https://avysel.github.io",
-    "summary": "Experienced Tech Lead with 15+ years in software development, specialized in Java, Spring Boot, blockchain (Ethereum, Tezos, Avalanche, Sui) and AI. Led multidisciplinary teams, designed scalable architectures, and implemented DevOps/Cloud solutions (Docker, Kubernetes, GCP, Azure).",
+    "summary": "Tech Lead with over 15 years of experience, specializing in Java and Spring Boot, distributed architectures, and mission-critical products for major accounts (retail, finance). Technical team leadership, recruitment, architecture design, and support for quality, security, observability, and operations policies. Additional expertise in DevOps and cloud (Docker, Kubernetes, GCP, Azure, CI/CD) and blockchain (Ethereum, Tezos, Avalanche, Sui, smart contracts).",
     "location": {
       "city": "Lille",
       "countryCode": "FR",
@@ -29,11 +29,11 @@
       "name": "Adeo",
       "position": "Tech Lead",
       "startDate": "2023-01",
-      "summary": "Astek (until Feb 2025), then Freelance.",
+      "summary": "Adeo via Astek (until Feb. 2025), then freelance.",
       "highlights": [
-        "Tech lead in a team of 10 working on costing products. Architecture, technical design, cross-cutting policies (quality, security, observability), recruitment.",
-        "Development, CI/CD and Ops",
-        "Tech: Java, Spring Boot, MongoDB, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP, Github Copilot"
+        "Technical leadership of a team of around 10 on costing products. Architecture and design, cross-cutting policies (quality, security, observability), recruitment.",
+        "Development, CI/CD pipelines and operations",
+        "Tech: Java, Spring Boot, MongoDB, PostgreSQL, Neo4J, Angular, Vue.js, Kafka, Docker, Kubernetes, GCP, Github Actions, Github Copilot, Gatling, Datadog"
       ]
     },
     {
@@ -42,17 +42,17 @@
       "startDate": "2022-10",
       "endDate": "2022-12",
       "highlights": [
-        "Manager of team developing Ligo (Tezos smart contract language). Team of 12 distributed worldwide."
+        "Management of the Ligo team (Tezos smart contracts), 12 people internationally. Language evolution tracking, library registry."
       ]
     },
     {
-      "name": "Ineat Lab / Innovation Lab (Astek)",
+      "name": "Ineat Lab (Ineat Group), then Innovation Lab (Astek)",
       "position": "Innovation Cell / Blockchain & AI Referent",
       "startDate": "2018",
       "endDate": "2025",
       "highlights": [
-        "Technological watch on blockchain and AI. POCs, case studies, internal training, articles, conferences. Blockchain training - lab supervision at Supinfo Lille (2021). RAG/GraphRAG studies, knowledge graphs, model evaluation (Gemini, GPT, Llama, Claude).",
-        "Tech: Blockchain: React, JS/TS, Ethereum (Solidity), Tezos (Ligo). AI: Python, Jupyter, Ollama, Neo4J, Vector Search"
+        "Blockchain and AI referent: POCs, technology watch, training, RFP responses, articles and conferences. Teaching: blockchain lab supervision at Supinfo. RAG/GraphRAG studies, model benchmarking (Gemini, GPT, Llama, DeepSeek, Claude, Qwen).",
+        "Tech: React, JS/TS, Ethereum (Solidity), Tezos (Ligo), Python, Jupyter, Ollama, Neo4J, Vector Search"
       ]
     },
     {
@@ -61,8 +61,8 @@
       "startDate": "2021-07",
       "endDate": "2022-07",
       "highlights": [
-        "Tech lead for Concept Store team. POC implementation and industrialization for new store concepts.",
-        "Tech: Java, Spring Boot, MongoDB, PostgreSQL, Azure"
+        "Concept Store Tech Lead: design, industrialization, and delivery of new store concepts (POC to product).",
+        "Tech: Java, Spring Boot, MongoDB, PostgreSQL, Azure, Gitlab CI"
       ]
     },
     {
@@ -71,8 +71,8 @@
       "startDate": "2019-04",
       "endDate": "2021-07",
       "highlights": [
-        "Facilitation of a team of 5 people responsible for delivery promise for Leroymerlin.fr marketplace. Agile facilitation, slackbot development, team synchronization, participation in designs and architectures.",
-        "Tech: Java, Spring Boot, MongoDB, Kafka, Docker, Kubernetes, GCP"
+        "Scrum Master for a 5-person team — delivery promise on the Leroymerlin.fr marketplace. Agile facilitation, cross-team synchronization, participation in design and architecture.",
+        "Tech: Java, Spring Boot, MongoDB, Kafka, Docker, Kubernetes, GCP, Github Actions"
       ]
     },
     {
@@ -81,7 +81,7 @@
       "startDate": "2018-10",
       "endDate": "2019-04",
       "highlights": [
-        "Intervention in 4 teams to introduce them to the basics of agility and support them in their evolution with Scrum or Kanban."
+        "Agile coaching for 4 Adeo teams: Scrum / Kanban introduction and practice stabilization."
       ]
     },
     {
@@ -90,17 +90,17 @@
       "startDate": "2016-01",
       "endDate": "2018-10",
       "highlights": [
-        "IT projects: tokenization/mobile payment integration, strong customer authentication, business API exposure. Scrum implementation, preliminary studies, technical/functional designs, architectures, POCs.",
+        "Mobile payment integration and strong customer authentication. Scrum, studies and design, architecture decisions, regulatory/legal support.",
         "Tech: Java, Spring Boot"
       ]
     },
     {
       "name": "Leroy Merlin (via Ineat Group)",
-      "position": "Technical Project Manager - Mobile Applications",
+      "position": "Technical Project Manager — Mobile Applications",
       "startDate": "2015-01",
       "endDate": "2016-12",
       "highlights": [
-        "Mobility division: coordination of mobile sales application prototype. Consumer mobile apps team: complete iOS/Android redesign. Technical designs, user workshops (Lean Startup), team coordination, proximity management (6-10 people).",
+        "Sales application prototype then iOS/Android redesign. Hands-on management (6-10 people), technical scoping, user workshops (Lean Startup), planning and budget tracking.",
         "Tech: Android, iOS, Java"
       ]
     },
@@ -110,8 +110,8 @@
       "startDate": "2012-06",
       "endDate": "2014-12",
       "highlights": [
-        "Group instance planning application. Team management (2 people), project planning (Planisware), budget monitoring, stakeholder coordination, MOA relationships, Java designs and development.",
-        "Tech: Java, Hibernate, Struts, JSP, Oracle, PostgreSQL"
+        "Group instance planning application. Small team management, project and budget tracking, business analyst/project coordination, Java development.",
+        "Tech: Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Tomcat"
       ]
     },
     {
@@ -120,6 +120,7 @@
       "startDate": "2008",
       "endDate": "2012",
       "highlights": [
+        "Retail sector client projects, Java/JEE development.",
         "Tech: Java, Hibernate, Struts, JSP, Oracle, PostgreSQL, Websphere, Tomcat"
       ]
     }
@@ -135,34 +136,53 @@
     {
       "institution": "IUT de Lens",
       "area": "Computer Science",
-      "studyType": "DUT",
+      "studyType": "Associate Degree (DUT)",
       "startDate": "2003",
       "endDate": "2005"
     }
   ],
   "certificates": [
     {
-      "name": "Professional Scrum Master I (PSM I)",
+      "name": "Scrum PSM I",
+      "date": "12/2019",
       "issuer": "Scrum.org",
-      "url": "https://www.scrum.org/user/594885"
+      "url": "https://www.scrum.org/certificates/481686"
+    },
+    {
+      "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
+      "date": "04/2020",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/PYJRSZ8GJ4QL"
+    },
+    {
+      "name": "MongoDB Java Developer Path",
+      "date": "02/2024",
+      "issuer": "MongoDB",
+      "url": "https://learn.mongodb.com/c/EnmMHhJQSE2xsSyy4U-K4w"
+    },
+    {
+      "name": "MongoDB Data Modeling Path",
+      "date": "08/2024",
+      "issuer": "MongoDB",
+      "url": "https://learn.mongodb.com/c/zaleQYclSBStnZSBfQRtIw"
     }
   ],
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Java", "Javascript", "Typescript", "HTML", "CSS", "Python", "Solidity", "Ligo"]
+      "keywords": ["Java", "JavaScript", "TypeScript", "HTML", "CSS"]
     },
     {
       "name": "Frameworks & Tools",
-      "keywords": ["Spring Boot", "Spring", "React", "Angular", "Vue.js", "Kafka", "Redis"]
+      "keywords": ["Spring Boot", "Spring Framework", "React", "Angular", "Vue.js", "Kafka", "Redis"]
     },
     {
       "name": "Databases",
-      "keywords": ["MongoDB", "PostgreSQL", "Neo4J", "Oracle"]
+      "keywords": ["MongoDB", "PostgreSQL", "Neo4j", "Oracle"]
     },
     {
-      "name": "DevOps & Cloud",
-      "keywords": ["Docker", "Kubernetes", "GCP", "Azure", "Gitlab", "Gitlab CI", "Github", "Github Actions"]
+      "name": "Cloud & DevOps",
+      "keywords": ["Docker", "Kubernetes", "GCP", "Azure", "GitLab", "GitLab CI/CD", "GitHub", "GitHub Actions"]
     },
     {
       "name": "Blockchain",
@@ -178,38 +198,27 @@
         "Taquito",
         "Sui",
         "Move",
-        "Smart contracts",
+        "smart contracts",
         "consensus",
-        "governance",
-        "DAG"
+        "governance"
       ]
     },
     {
       "name": "AI",
       "keywords": [
-        "Python",
-        "Jupyter",
         "Ollama",
         "OpenWebUI",
-        "Knowledge Graph",
-        "Vectorization",
+        "RAG",
         "embeddings",
-        "Atlas Vector Search",
+        "MongoDB Atlas Vector Search",
         "PGVector",
-        "Neo4J",
-        "Prompt engineering",
-        "MCP",
-        "Github Copilot",
-        "Cursor"
+        "Neo4j",
+        "knowledge graph"
       ]
     },
     {
-      "name": "Testing & Monitoring Tools",
+      "name": "Testing & observability",
       "keywords": ["Postman", "Bruno", "Gatling", "Datadog"]
-    },
-    {
-      "name": "Leadership & Methods",
-      "keywords": ["Scrum Master", "Engineering Manager", "Agile", "Kanban", "PSM I", "Recruitment"]
     }
   ],
   "languages": [
@@ -231,9 +240,9 @@
       "name": "Instampy.fr",
       "url": "https://www.instampy.fr/",
       "startDate": "2025-09",
-      "description": "B2C timestamping SaaS - Blue Mossa",
+      "description": "B2C timestamping SaaS — Blue Mossa",
       "highlights": [
-        "Founder & architect, solo end-to-end delivery. Cloud-agnostic full-stack architecture with anti lock-in abstractions; modular multi-chain blockchain (Sui, Avalanche), Move/Solidity, compartmentalized gas fees. Nuxt SSR, REST API, PostgreSQL/Prisma, Stripe, GDPR FR/EN. Railway multi-env, GitHub Actions, monitoring, DNS/DMARC/DKIM.",
+        "Founder & architect, end-to-end product delivery. Cloud-agnostic anti lock-in architecture; multi-chain blockchain (Sui, Avalanche), Move/Solidity. Nuxt SSR, REST API, PostgreSQL/Prisma, Stripe, GDPR FR/EN. Railway, GitHub Actions, monitoring, DNS/DMARC/DKIM.",
         "Tech: Nuxt 4, Vue 3, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Railway, Sui, Avalanche, Stripe"
       ]
     },
@@ -242,9 +251,9 @@
       "startDate": "2022-01",
       "endDate": "2023",
       "highlights": [
-        "Tezocracy: online tool to facilitate Tezos bakers' votes for governance proposals. Development in collaboration with MIDL.dev. https://tezocracy.xyz/",
-        "Testnet faucet: personal development, Tezos Foundation funding, integration as official faucet, handover to OxheadAlpha and maintenance, before transfer to the foundation.",
-        "Tech: React, Taquito, Tezos, Github Actions, Netlify"
+        "Tezocracy: online tool to help Tezos bakers vote on governance proposals. Development in collaboration with MIDL.dev. https://tezocracy.xyz/",
+        "Testnet faucet: personal project, Tezos Foundation funding, integration as official faucet, handover to OxheadAlpha and maintenance before transfer to the foundation.",
+        "Tech: React, Taquito, Tezos, GitHub Actions, Netlify"
       ]
     }
   ]
